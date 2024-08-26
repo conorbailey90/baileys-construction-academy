@@ -16,13 +16,14 @@ const Hero = () => {
         />
         <div className=' absolute inset-0 bg-[black] opacity-65 z-2'> </div>
         <div className='w-[95%] max-w-[1880px] relative z-2 pt-[180px] grid grid-cols-12 auto-rows-min gap-[10px]'>
-            <div className='col-start-1 row-start-1 col-span-12 '>
-                <h1 className='leading-[1.1] font-semibold'>Build Your Future</h1>
+            <div className='col-start-1 row-start-1 col-span-12 md:col-span-8 lg:col-span-6  '>
+                <h1 className='text-balance leading-[1.1] font-semibold'>Build Your Future with Expert Training in <span className='text-[rgb(252,186,3)]'>Bricklaying</span> & <span className='text-[rgb(252,186,3)]'>Plastering</span></h1>
+                {/* <h1 className='leading-[1.1] font-semibold'>Build Your Future</h1>
                 <h1 className='leading-[1.1] font-semibold'>with Expert Training </h1>
-                <h1 className='leading-[1.1] font-semibold'>in <span className='text-[rgb(252,186,3)]'>Bricklaying</span> & <span className='text-[rgb(252,186,3)]'>Plastering</span></h1>
+                <h1 className='leading-[1.1] font-semibold'>in <span className='text-[rgb(252,186,3)]'>Bricklaying</span> & <span className='text-[rgb(252,186,3)]'>Plastering</span></h1> */}
             </div>
            
-            <div className='col-start-1 col-span-12 md:col-span-5 pt-[1rem]'>
+            <div className='col-start-1 col-span-12 md:col-span-8 md:col-start-1 pt-[1rem] lg:col-span-6 lg:col-start-1'>
                 <p className='font-semibold'>Learn from industry experts and gain the practical skills you need to excel in construction. Our comprehensive courses in bricklaying and plastering are designed to help you build a solid foundation for a successful career. <br /><br/> Whether you&#39;re starting out or looking to enhance your skills, our academy in Essex offers the perfect environment for learning and growth.</p>
             </div>
 
