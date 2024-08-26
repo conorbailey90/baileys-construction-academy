@@ -18,12 +18,15 @@
   letter-spacing: -.03em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
+
 }
 
 html, body{
   background: black;
   /* color: #161616c4; */
+  scroll-behavior: smooth;
 }
+
 
 h1{
   font-size: 2.986rem;
@@ -57,7 +60,7 @@ p, li{
 @media only screen and (max-width: 768px) {
   
   h1{
-    font-size: 2.074rem;
+    font-size: 1.728rem;
   }
 
   h2{

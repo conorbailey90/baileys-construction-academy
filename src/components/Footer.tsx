@@ -5,7 +5,7 @@ import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer className=' relative w-[100%] min-h-[300px] flex justify-center bg-[black]'>
+    <footer id='footer' className=' relative w-[100%] min-h-[300px] flex justify-center bg-[black]'>
         <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] pb-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
             <div className='col-span-12 md:col-span-6 mt-[2rem]'>
             <h6 style={{fontSize: '1rem', fontFamily: 'montserrat', fontWeight: 'bold', letterSpacing: '-.05em'}} className="flex col-span-3 items-center uppercase text-[rgb(252,186,3)]">Bailey&#39;s Bricklaying & Plastering</h6>

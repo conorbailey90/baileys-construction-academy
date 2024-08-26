@@ -33,10 +33,10 @@ const testimonials = [
 
 const Testimonial = ({testimonial, author}: {testimonial: string, author: string}) => {
     return (
-        <div className="relative w-[100%] shrink-0 py-[5rem] px-[6rem] border border-[black] border-[1px] flex flex-col justify-center items-space-between md:w-[50%] px-[4rem]">
+        <div className="relative w-[100%] shrink-0 py-[3rem] px-[3rem] border border-[black] border-[1px] flex flex-col justify-center items-space-between md:w-[50%]">
             <Quote size={100} strokeWidth={1} opacity={.3}  className="absolute top-[1rem] left-[1rem] scale-x-[-1]" />
             <Quote size={100} strokeWidth={1} opacity={.3} className="absolute bottom-[1rem] right-[1rem] " />
-            <p className="text-center">{testimonial}</p><br />
+            <p className="text-center text-balance">{testimonial}</p><br />
             <p className="text-center font-semibold text-[rgb(252,186,3)]">{author}</p>
         </div>
     )
@@ -87,9 +87,6 @@ const Testimonials = () => {
             </div>
             <button className="absolute left-[0] bottom-[0] flex justify-center items-center bg-[black] p-[1rem] hover:opacity-[0.5]" onClick={prevSlide}><ChevronLeft /></button>
             <button className="absolute right-[0] bottom-[0] flex justify-center items-center bg-[black] p-[1rem] hover:opacity-[0.5]" onClick={nextSlide}><ChevronRight /></button>
-        </div>
-        <div className="w-[100%] flex justify-center gap-[10px] py-[1rem]">
-               
         </div>
     </section>
   )

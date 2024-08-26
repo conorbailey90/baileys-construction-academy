@@ -4,19 +4,19 @@ import Link from "next/link"
 const links = [
     {
         name: 'Home',
-        href: '/'
+        href: '/#hero'
     },
     {
         name: 'About',
-        href: '/about'
+        href: '/#about'
     },
     {
         name: 'Courses',
-        href: '/courses'
+        href: '/#courses'
     },
     {
         name: 'Contact',
-        href: '/contact'
+        href: '/#footer'
     },
 ]
 
@@ -28,7 +28,7 @@ const Navbar = () => {
             <ul className=" hidden md:flex col-span-6 items-center">
                 {links.map(link => (
                     <li key={link.name} className="mr-4">
-                        <Link href={link.href}>{link.name}</Link>
+                        <Link className='font-semibold hover:text-[rgb(252,186,3)]' href={link.href}>{link.name}</Link>
                     </li>
                 ))}
             </ul>

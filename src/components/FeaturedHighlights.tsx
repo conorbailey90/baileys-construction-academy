@@ -47,7 +47,7 @@ const Card = ({icon, title, description}: {icon: any, title: String, description
             </div>
             <div style={{background: 'linear-gradient(to right, transparent, rgb(252, 186, 3), transparent)'}} className='w-[100%] h-[1px] mb-[1rem]'></div>
             <div>
-                <p>{description}</p>
+                <p className='text-balance'>{description}</p>
             </div>
             
             
@@ -58,7 +58,7 @@ const Card = ({icon, title, description}: {icon: any, title: String, description
 const FeaturedHighlights = () => {
   return (
     <section className=' relative w-[100%] min-h-[500px] flex justify-center bg-[#161616]'>
-        <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] pb-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
+        <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
           {featureHighlights.map(hl => (
             <Card key={hl.title} icon={hl.icon} title={hl.title} description={hl.description} />
           ))}
