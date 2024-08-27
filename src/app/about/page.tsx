@@ -22,7 +22,7 @@ const page = () => {
             
         </div>
         <div className=' pb-[2rem] col-start-1 col-span-12 md:col-start-7 md:col-span-6 row-start-1'>
-            <h4 className='font-bold'>About Us: Bailey&apos;s Bricklaying & Plastering Academy</h4><br />
+            <h4 className='font-bold text-balance'>About Us: Bailey&apos;s Bricklaying & Plastering Academy</h4><br />
             <p className='text-balance'>Welcome to Bailey&apos;s Bricklaying & Plastering Academy, where passion meets precision, and skills are forged in the foundation of quality craftsmanship. We are a premier training institution dedicated to teaching the art and science of bricklaying and plastering. Our mission is to empower individuals with the knowledge, hands-on experience, and professional expertise needed to excel in the construction industry.</p>
             <br />
             <h5 className='font-bold'>Our Story</h5>
