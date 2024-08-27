@@ -65,7 +65,7 @@ const page = () => {
             <br />
             <p className='text-balance'>Explore our courses, meet our instructors, and discover what makes Bailey&apos;s Bricklaying & Plastering Academy the preferred choice for aspiring bricklayers and plasterers. We look forward to helping you lay the first brick on your path to success!</p>
             <br />
-            <h5 className='font-bold'>Join Us Today!</h5>
+            <h5 className='font-bold'>Contact Us</h5>
             <br />
             <p className='text-balance'>Ready to take the next step? Contact us today to learn more about our courses, schedule a tour of our facilities, or speak with one of our advisors.</p>
         </div>
