@@ -19,7 +19,7 @@ const links = [
     },
     {
         name: 'Contact',
-        href: '/#footer'
+        href: '/contact'
     },
 ]
 

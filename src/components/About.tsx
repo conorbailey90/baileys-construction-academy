@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Check } from 'lucide-react'
+import Link from 'next/link'
 
 const About = () => {
   return (
@@ -27,12 +28,15 @@ const About = () => {
                 <p className='text-balance'>Our mission is simple: to provide top-notch training that combines hands-on experience with industry-leading knowledge. We believe that great craftsmanship starts with a solid education, and we&apos;re here to offer you both.</p><br />
                 <h5 className='font-bold'>What We Offer:</h5>
                 <ul><br />
-                    <li className='flex items-center'><Check color='rgb(252,186,3)' className='mr-[1rem]' /><p>Expert Instruction: Learn from seasoned professionals who bring years of real-world experience to the classroom.</p></li><br />
-                    <li className='flex items-center'><Check color='rgb(252,186,3)' className='mr-[1rem]' /><p>Hands-On Training: Our courses are designed to give you practical skills that you can apply immediately on the job.</p></li><br />
-                    <li className='flex items-center'><Check color='rgb(252,186,3)' className='mr-[1rem]' /><p>Comprehensive Programs: From beginner courses to advanced techniques, we cater to all levels of expertise.</p></li><br />
-                    <li className='flex items-center'><Check color='rgb(252,186,3)' className='mr-[1rem]' /><p>State-of-the-Art Facilities: Train in a modern environment equipped with the latest tools and technology.</p></li><br />
+                    <li className='flex items-center'><Check width={'30px'} color='rgb(252,186,3)' className='mr-[1rem]' /><p> <span className='font-semibold'>Expert Instruction:</span> Learn from seasoned professionals who bring years of real-world experience to the classroom.</p></li><br />
+                    <li className='flex items-center'><Check width={'30px'} color='rgb(252,186,3)' className='mr-[1rem]' /><p> <span className='font-semibold'>Hands-On Training:</span> Our courses are designed to give you practical skills that you can apply immediately on the job.</p></li><br />
+                    <li className='flex items-center'><Check width={'30px'} color='rgb(252,186,3)' className='mr-[1rem]' /><p> <span className='font-semibold'>Comprehensive Programs:</span> From beginner courses to advanced techniques, we cater to all levels of expertise.</p></li><br />
+                    <li className='flex items-center'><Check width={'30px'} color='rgb(252,186,3)' className='mr-[1rem]' /><p> <span className='font-semibold'>State-of-the-Art Facilities:</span> Train in a modern environment equipped with the latest tools and technology.</p></li><br />
                 </ul>
-                <h6 className='text-[rgb(252,186,3)] cursor-pointer font-bold'>Learn More</h6>
+                <Link href={'/about'}>
+                    <h6 className='bg-[rgb(252,186,3)] text-center cursor-pointer font-bold text-[#161616] p-[1rem] hover:opacity-[0.5]'>Learn More</h6>
+                </Link>
+           
             </div>
               
         </div>

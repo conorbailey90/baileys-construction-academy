@@ -10,7 +10,7 @@ import MobileMenu from "@/components/MobileMenu";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bailey's Brick Laying & Plastering",
+  title: "Bailey's Bricklaying & Plastering",
 description: "Build Your Future with Expert Training in Bricklaying & Plastering"
 };
 
