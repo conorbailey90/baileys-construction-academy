@@ -8,7 +8,7 @@ const links = [
     },
     {
         name: 'About',
-        href: '/#about'
+        href: '/about'
     },
     {
         name: 'Courses',

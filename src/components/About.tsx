@@ -11,12 +11,12 @@ const About = () => {
             <div className=' relative p-[1rem] col-start-3 col-span-8 border border-[rgb(252,186,3)] border-[1px] aspect-square md:col-span-4 md:col-start-2 '>
                 <div className='absolute inset-[1rem]  '>
                 <Image 
-                style={{objectFit: "cover"}}
-                 
-                 src="/plasterer.jpg"
-                 alt="Background Image"
-                 fill // Can be 'contain', 'cover', or 'none' based on your needs
-                 quality={100} // Optional: Specify the quality of the image/
+                    style={{objectFit: "cover"}}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    src="/plasterer.jpg"
+                    alt="Background Image"
+                    fill // Can be 'contain', 'cover', or 'none' based on your needs
+                    quality={100} // Optional: Specify the quality of the image/
                  />
                 </div>
                 

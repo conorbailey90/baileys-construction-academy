@@ -5,13 +5,12 @@ import About from "@/components/About";
 import FeaturedHighlights from "@/components/FeaturedHighlights";
 import Courses from "@/components/Courses";
 import Testimonials from "@/components/Testimonials";
-import MobileMenu from "@/components/MobileMenu";
+
 
 
 export default function Home() {
   return (
   <main>
-    <MobileMenu />
     <Hero />
     <About />
     <FeaturedHighlights />
