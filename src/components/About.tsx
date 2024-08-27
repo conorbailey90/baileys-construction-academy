@@ -23,8 +23,8 @@ const About = () => {
             </div>
             <div className=' pb-[2rem] col-start-1 col-span-12 md:col-start-7 md:col-span-6 row-start-1'>
                 <h4 className='font-bold'>About Us</h4><br />
-                <p className='text-balance'>Welcome to the Bricklaying and Plastering Academy, where we’re dedicated to shaping the next generation of construction professionals. Based in Essex, our academy is a hub of excellence for anyone looking to master the skills of bricklaying and plastering.</p><br />
-                <p className='text-balance'>Our mission is simple: to provide top-notch training that combines hands-on experience with industry-leading knowledge. We believe that great craftsmanship starts with a solid education, and we’re here to offer you both.</p><br />
+                <p className='text-balance'>Welcome to the Bricklaying and Plastering Academy, where we&apos;re dedicated to shaping the next generation of construction professionals. Based in Essex, our academy is a hub of excellence for anyone looking to master the skills of bricklaying and plastering.</p><br />
+                <p className='text-balance'>Our mission is simple: to provide top-notch training that combines hands-on experience with industry-leading knowledge. We believe that great craftsmanship starts with a solid education, and we&apos;re here to offer you both.</p><br />
                 <h5 className='font-bold'>What We Offer:</h5>
                 <ul><br />
                     <li className='flex items-center'><Check color='rgb(252,186,3)' className='mr-[1rem]' /><p>Expert Instruction: Learn from seasoned professionals who bring years of real-world experience to the classroom.</p></li><br />
