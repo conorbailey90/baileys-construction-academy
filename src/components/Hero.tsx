@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section id='hero' className='relative w-[100%] min-h-[100vh] flex justify-center pb-[60px]'>
+    <section id='hero' className='relative w-[100%] min-h-[90vh] flex justify-center pb-[60px]'>
         <Image
         className='absolute inset-0 '
         src="/brick.jpg"
@@ -31,12 +31,12 @@ const Hero = () => {
 
             <div className='col-start-1 col-span-12 md:col-span-6 md:col-start-1 flex gap-[10px] pt-[1rem]'>
                 <Link href={'/'}>
-                    <div className='flex-1 p-4 bg-[rgb(252,186,3)] border border-[black] border-[1px]'>
-                        <p className='text-black font-bold'>Enroll Today</p>
+                    <div className='flex-1 p-4 bg-[rgb(252,186,3)] border border-[black] border-[1px] rounded-[5px]'>
+                        <p className='text-black font-bold '>Enroll Today</p>
                     </div>
                 </Link>
                 <Link  href={'/#about'}>
-                    <div className='flex-1 border border-[black] border-[1px] p-4 bg-[black]'>
+                    <div className='flex-1 border border-[black] border-[1px] p-4 bg-[black] rounded-[5px]'>
                         <p className='text-[rgb(252,186,3)] font-bold'>Find Out More</p>
                     </div>
                 </Link>

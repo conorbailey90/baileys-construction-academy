@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ContactHeader from "@/components/ContactHeader";
 import "./globals.css";
 import MobileMenu from "@/components/MobileMenu";
+import { Toaster, toast } from 'sonner'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <MobileMenu />
           {children}
           <Footer />
+          <Toaster />
       </body>
     </html>
   );

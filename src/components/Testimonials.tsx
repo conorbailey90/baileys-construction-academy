@@ -33,7 +33,7 @@ const testimonials = [
 
 const Testimonial = ({testimonial, author}: {testimonial: string, author: string}) => {
     return (
-        <div className="relative w-[100%] shrink-0 py-[3rem] px-[3rem] border border-[black] border-[1px] flex flex-col justify-center items-space-between md:w-[50%]">
+        <div className="relative w-[100%] shrink-0 py-[5rem] px-[3rem] border border-[black] border-[1px] flex flex-col justify-center items-space-between md:w-[50%]">
             <Quote size={100} strokeWidth={1} opacity={.3}  className="absolute top-[1rem] left-[1rem] scale-x-[-1]" />
             <Quote size={100} strokeWidth={1} opacity={.3} className="absolute bottom-[1rem] right-[1rem] " />
             <p className="text-center text-balance">{testimonial}</p><br />
