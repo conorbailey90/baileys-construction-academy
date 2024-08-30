@@ -10,6 +10,7 @@ export default function ContactForm() {
   async function clientAction(formData: FormData){
     const result = await sendEmail(formData);
     if(result?.error){
+      console.log(result.error)
       toast.error('Something went wrong!', {
 
         classNames: {
