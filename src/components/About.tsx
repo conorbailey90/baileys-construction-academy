@@ -34,7 +34,7 @@ const About = () => {
                     <li className='flex items-center'><Check width={'30px'} color='rgb(252,186,3)' className='mr-[1rem]' /><p> <span className='font-semibold'>State-of-the-Art Facilities:</span> Train in a modern environment equipped with the latest tools and technology.</p></li><br />
                 </ul>
                 <Link href={'/about'}>
-                    <h6 className='bg-[rgb(252,186,3)] text-center cursor-pointer font-bold text-[#161616] p-[1rem] hover:opacity-[0.5]'>Learn More</h6>
+                    <h6 className='bg-[rgb(252,186,3)] rounded-[5px] text-center cursor-pointer font-bold text-[#161616] p-[1rem] hover:opacity-[0.5]'>Learn More</h6>
                 </Link>
            
             </div>
