@@ -1,6 +1,7 @@
-import Link from 'next/link';
+
+
 import React from 'react';
-import Image from 'next/image';
+import { CoursesTile } from './CoursesTile';
 
 const courses = [
     {
@@ -32,38 +33,15 @@ const courses = [
    
   ];
   
-  const Card = ({title, description, details, image}: {title: String, description: String, details: String, image: string }) => {
-    return (
-        <div className='relative col-span-12 p-[2rem] bg-[black] flex flex-col md:col-span-6 border border-[black] border-[1px]'>
-            {image && <Image alt='image' style={{objectFit: 'cover', opacity: .3}} src={image} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />}
-            <div className='relative mb-[1rem] z-1'>
-                <h5 className='text-[rgb(252,186,3)] font-bold'>{title}</h5>    
-            </div>
-            <div className='relative z-1'>
-                <p className='font-semibold'>{description}</p>
-            </div>
-            <div className='relative z-1 mt-[1rem]'>
-                <p className='text-balance'>{details}</p>
-            </div>
-            <Link href={'/'}>
-                <button className='mt-[1rem] text-[rgb(252,186,3)] font-bold'>Learn More</button>
-            </Link>
-        </div>
-    )
-}
 
 const Courses = () => {
   return (
     <section id='courses' className=' relative w-[100%] flex justify-center bg-[#161616] pt-[40px] md:pt-[100px]'>
-
     <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
-
          <h4 className='col-span-12 font-bold'>Explore Our Range of Courses</h4>
-         {courses.map(course => (
-            <Card key={course.title} title={course.title} description={course.description} details={course.details} image={course.image!} />
+         {courses.map((course, idx) => (
+            <CoursesTile key={course.title} idx={idx} title={course.title} description={course.description} details={course.details} image={course.image!} />
          ))}
-        
-          
     </div>
 </section>
   )

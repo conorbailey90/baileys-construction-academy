@@ -1,7 +1,5 @@
-import React from 'react'
-import { CalendarClockIcon, Building, GraduationCap, PencilRulerIcon, BrickWall, Cuboid  } from 'lucide-react';
-
-const featureHighlights = [ 
+import { FeaturedHighlightsTile } from "./FeaturedHighlightsTile";
+const featuredHighlights = [ 
     {   icon: 'brick',
         title: "Hands-On Learning Experience", 
         description: "We believe in learning by doing. Our courses provide extensive hands-on training with real-world projects, ensuring you gain practical skills and experience. Work directly with tools and materials to master bricklaying and plastering techniques." 
@@ -33,34 +31,13 @@ const featureHighlights = [
     } 
 ];
 
-const Card = ({icon, title, description}: {icon: any, title: String, description: String}) => {
-    return (
-        <div  className='col-span-12 p-[2rem] bg-[black] flex flex-col md:col-span-6 lg:col-span-4'>
-            {icon == 'brick' && <BrickWall strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
-            {icon == 'graduation' && <GraduationCap strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
-            {icon == 'building' && <Building strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
-            {icon == 'pencil' && <PencilRulerIcon strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
-            {icon == 'calendar' && <CalendarClockIcon strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
-            {icon == 'job' && <Cuboid strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
-            <div className='mb-[1rem]'>
-                <h6 className='text-[rgb(252,186,3)] font-bold'>{title}</h6>    
-            </div>
-            <div style={{background: 'linear-gradient(to right, transparent, rgb(252, 186, 3), transparent)'}} className='w-[100%] h-[1px] mb-[1rem]'></div>
-            <div>
-                <p className='text-balance'>{description}</p>
-            </div>
-            
-            
-        </div>
-    )
-}
 
 const FeaturedHighlights = () => {
   return (
     <section className=' relative w-[100%] min-h-[500px] flex justify-center bg-[#161616]'>
         <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
-          {featureHighlights.map(hl => (
-            <Card key={hl.title} icon={hl.icon} title={hl.title} description={hl.description} />
+          {featuredHighlights.map((hl, idx) => (
+            <FeaturedHighlightsTile key={hl.title} idx={idx} icon={hl.icon} title={hl.title} description={hl.description} />
           ))}
         </div>
     </section>

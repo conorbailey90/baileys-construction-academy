@@ -1,5 +1,5 @@
 'use client'
-
+import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -31,7 +31,7 @@ const testimonials = [
     },
   ];
 
-const Testimonial = ({testimonial, author}: {testimonial: string, author: string}) => {
+const Testimonial = ({idx, testimonial, author}: {idx: number, testimonial: string, author: string}) => {
     return (
         <div className="relative w-[100%] shrink-0 py-[5rem] px-[3rem] border border-[black] border-[1px] flex flex-col justify-center items-space-between md:w-[50%]">
             <Quote size={100} strokeWidth={1} opacity={.3}  className="absolute top-[1rem] left-[1rem] scale-x-[-1]" />
@@ -78,16 +78,20 @@ const Testimonials = () => {
       };
   return (
     <section className='relative w-[100%] flex flex-col items-center bg-[#161616] py-[30px]'>
-        <div style={{borderLeft: '1px solid black', borderRight: '1px solid black',}} className='w-[95%] max-w-[1880px] h-[100%] relative z-2 overflow-hidden '>
+        <motion.div      
+          initial={{ opacity: 0, y: 0 }} 
+          transition={{ ease: "easeIn", duration: .5 , delay: .5 }} 
+          viewport={{once: true}}
+          whileInView={{ opacity: 1, y: 0 }}   style={{borderLeft: '1px solid black', borderRight: '1px solid black',}} className='w-[95%] max-w-[1880px] h-[100%] relative z-2 overflow-hidden '>
       
             <div style={{ transform: `translateX(calc(-${currentIndex * (currentWidth >= 768 ? 50 : 100)}% - ${10 * currentIndex}px))` }} className="relative ease-in duration-300 w-[100%] h-[100%] flex gap-[10px]">
                 {testimonials.map((t,idx) => (
-                    <Testimonial testimonial={t.testimonial} author={t.author} key={idx} />
+                    <Testimonial idx={idx} testimonial={t.testimonial} author={t.author} key={idx} />
                 ))}
             </div>
             <button className="absolute left-[0] bottom-[0] flex justify-center items-center bg-[black] p-[1rem] hover:opacity-[0.5]" onClick={prevSlide}><ChevronLeft /></button>
             <button className="absolute right-[0] bottom-[0] flex justify-center items-center bg-[black] p-[1rem] hover:opacity-[0.5]" onClick={nextSlide}><ChevronRight /></button>
-        </div>
+        </motion.div>
     </section>
   )
 }

@@ -7,15 +7,15 @@ const ContactHeader = () => {
         <div className='relative w-[95%] max-w-[1880px] flex '>
           <div className=' flex items-center h-[100%] mr-[2rem]'>
             <PhoneIcon color='black' strokeWidth={'1px'} className='mr-[.5rem]' />
-            <p className='text-[#161616] font-semibold'> 01277 532991</p>
+            <p className='text-[#161616] font-semibold text-xs'> 01277 532991</p>
           </div>
-          <div className=' flex items-center h-[100%] mr-[2rem]'>
+          <div className=' flex items-center h-[100%] mr-[2rem] '>
             <MailIcon strokeWidth={'1px'}color='black' className='mr-[.5rem]' />
-            <p className='text-[#161616] font-semibold'>info@paulbailey.info</p>
+            <p className='text-[#161616] font-semibold text-xs'>info@paulbailey.info</p>
           </div>
           <div className=' flex items-center h-[100%] mr-[2rem]'>
             <MapPin strokeWidth={'1px'}color='black' className='mr-[.5rem]' />
-            <p className='text-[#161616] font-semibold'>Unit 16 Ilford Trading Estate, Paycocke Road, Basildon, Essex,  SS14 3DR</p>
+            <p className='text-[#161616] font-semibold text-xs'>Unit 16 Ilford Trading Estate, Paycocke Road, Basildon, Essex,  SS14 3DR</p>
           </div>
         </div>
     </div>
