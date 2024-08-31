@@ -22,7 +22,7 @@ const About = () => {
         </div>
 
         <div className='pb-[2rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8 row-start-2 pt-[2rem]'>
-          <h4 className='font-bold text-balance'>About Us: Essex Bricklaying & Plastering School</h4>
+          <h4 className='font-bold text-balance'>About Us</h4>
           <br />
           <p className='text-balance'>Welcome to Essex Bricklaying & Plastering School! We&apos;re here to help you get hands-on experience in bricklaying and plastering. Whether you&apos;re starting a career or just learning for your DIY projects, our practical training suits all skill levels.</p>
           <br />
