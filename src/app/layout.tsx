@@ -13,8 +13,8 @@ import MobileMenuDemo from "@/components/MobileMenuDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bailey's Bricklaying & Plastering",
-description: "Build Your Future with Expert Training in Bricklaying & Plastering"
+  title: "Essex Bricklaying & Plastering School",
+  description: "Build Your Future with Expert Training in Bricklaying & Plastering"
 };
 
 export default function RootLayout({
