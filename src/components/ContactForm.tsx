@@ -11,6 +11,7 @@ export default function ContactForm() {
     const result = await sendEmail(formData);
     if(result?.error){
       console.log(result.error)
+      alert(result.error)
       toast.error('Something went wrong!', {
 
         classNames: {
