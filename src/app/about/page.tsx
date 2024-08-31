@@ -2,89 +2,87 @@ import React from 'react'
 import Image from 'next/image'
 import { Check } from 'lucide-react'
 
-const page = () => {
+const About = () => {
   return (
-    <section id='about' className=' relative w-[100%] min-h-[500px] flex justify-center bg-[#161616] pt-[40px] md:pt-[100px]'>
+    <section id='about' className='relative w-full min-h-[500px] flex justify-center bg-[#161616] pt-[40px] md:pt-[100px]'>
 
-    <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] pb-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
+      <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] pb-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
 
-        <div className=' relative p-[1rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8 border border-[rgb(252,186,3)] border-[1px] aspect-[16/6] '>
-            <div className='absolute inset-[1rem]  '>
+        <div className='relative p-[1rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8 border border-[rgb(252,186,3)] border-[1px] aspect-[16/6]'>
+          <div className='absolute inset-[1rem]'>
             <Image 
+              style={{objectFit: "cover"}}
+              sizes="100vw" 
+              src="/plasterer.jpg"
+              alt="Background Image"
+              fill
+              quality={100}
+            />
+          </div>
+        </div>
+
+        <div className='pb-[2rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8 row-start-2 pt-[2rem]'>
+          <h4 className='font-bold text-balance'>About Us: Essex Bricklaying & Plastering School</h4>
+          <br />
+          <p className='text-balance'>Welcome to Essex Bricklaying & Plastering School! We&apos;re here to help you get hands-on experience in bricklaying and plastering. Whether you&apos;re starting a career or just learning for your DIY projects, our practical training suits all skill levels.</p>
+          <br />
+          <h5 className='font-bold'>Our Story</h5>
+          <br />
+          <p className='text-balance'>Essex Bricklaying & Plastering School was founded with a clear mission: to provide high-quality training for those interested in bricklaying and plastering. With over 25 years in the construction industry, our founder, Paul Bailey, saw a need for better training in these essential trades. His passion for teaching and building led to the creation of our school, where we bridge the gap between theory and practice with hands-on learning.</p>
+          <br />
+          <h5 className='font-bold'>Our Mission</h5>
+          <br />
+          <p className='text-balance'>Our goal is to deliver top-notch training that helps you thrive in the construction industry. Here&apos;s what we focus on:</p>
+          <ul><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Quality Training:</span> Our courses meet industry standards, preparing you for modern construction projects.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Hands-On Learning:</span> We emphasize practical experience, giving you real skills with the tools and techniques used in the field.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Focus on Quality:</span> We teach the importance of good workmanship and safety, so you can work confidently and professionally.</p></li><br />
+          </ul>
+          <h5 className='font-bold'>What We Offer</h5>
+          <br />
+          <p className='text-balance'>Our courses cater to everyone, from beginners to those looking to enhance their skills. Here&apos;s what we provide:</p>
+          <ul><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Beginner Courses:</span> Ideal for newcomers, these courses cover the basics of bricklaying and plastering.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Advanced Techniques:</span> For those looking to refine their skills, we offer courses in areas like decorative brickwork and rendering.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Certifications and Apprenticeships:</span> Get certified and gain real-world experience with our accredited programs.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Customized Training:</span> We also offer tailored training for companies and individuals to meet specific needs.</p></li><br />
+          </ul>
+          <h5 className='font-bold'>Our Facilities</h5>
+          <br />
+          <p className='text-balance'>Our training space is designed to mimic real-world conditions, providing you with a safe and supportive environment. With advanced tools and materials, our facilities are equipped for hands-on practice. Our experienced instructors offer personalized guidance to ensure you get the most from your training.</p>
+          <br />
+          <h5 className='font-bold'>Why Choose Us?</h5>
+          <ul><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Experienced Instructors:</span> Learn from skilled professionals with years of field experience, dedicated to sharing their knowledge.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Practical Curriculum:</span> Our courses are updated with input from industry experts to ensure they’re relevant and effective.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Community Feel:</span> Join a supportive network of individuals who share your interest in the trade. Our community offers valuable networking opportunities.</p></li><br />
+          </ul>
+          <div className='relative p-[1rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8 border border-[rgb(252,186,3)] border-[1px] aspect-[16/6] mb-[2rem]'>
+            <div className='absolute inset-[1rem]'>
+              <Image 
                 style={{objectFit: "cover"}}
                 sizes="100vw" 
-                src="/plasterer.jpg"
+                src="/bricklay.jpg"
                 alt="Background Image"
-                fill // Can be 'contain', 'cover', or 'none' based on your needs
-                quality={100} // Optional: Specify the quality of the image/
-             />
+                fill
+                quality={100}
+              />
             </div>
-            
-        </div>
-        <div className=' pb-[2rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8  row-start-2 pt-[2rem]'>
-            <h4 className='font-bold text-balance'>About Us: Bailey&apos;s Bricklaying & Plastering Academy</h4><br />
-            <p className='text-balance'>Welcome to Bailey&apos;s Bricklaying & Plastering Academy, where passion meets precision, and skills are forged in the foundation of quality craftsmanship. We are a premier training institution dedicated to teaching the art and science of bricklaying and plastering. Our mission is to empower individuals with the knowledge, hands-on experience, and professional expertise needed to excel in the construction industry.</p>
-            <br />
-            <h5 className='font-bold'>Our Story</h5>
-            <br />
-            <p className='text-balance'>Bailey&apos;s Bricklaying & Plastering Academy was founded with a simple yet powerful vision: to create a world-class learning environment for aspiring bricklayers and plasterers. With over 25 years of experience in the construction industry, our founder, Paul Bailey, recognized a gap in quality education and training for these vital trades. Driven by a passion for building and a commitment to craftsmanship, Paul established the academy to offer comprehensive, industry-relevant training that bridges the gap between theory and practice.</p>
-            <br />
-            <h5 className='font-bold'>Our Mission</h5>
-            <br />
-            <p className='text-balance'>At Bailey&apos;s Bricklaying & Plastering Academy, our mission is to provide top-tier training that prepares our students for successful and rewarding careers in the construction industry. We believe in:</p>
+          </div>
 
-            <ul><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px"  color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Excellence in Training:</span> Our courses are designed to meet the highest industry standards, ensuring that our students are well-equipped to meet the demands of modern construction projects.</p></li><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px"  color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Hands-On Learning:</span> We emphasize practical experience through hands-on training in a realistic, safe, and supportive environment, allowing students to master the skills they need to succeed on the job.</p></li><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px"  color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Commitment to Quality:</span> We are dedicated to teaching the importance of quality workmanship, safety, and professionalism in every aspect of bricklaying and plastering.</p></li><br />
-            </ul>
-            <h5 className='font-bold'>What We Offer</h5>
-            <br />
-            <p className='text-balance'>Bailey&apos;s Bricklaying & Plastering Academy offers a range of courses designed to cater to all levels of experience, from beginners to seasoned professionals looking to enhance their skills. Our programs include:</p>
-            <ul><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)'/><p className='flex-[11]'><span className='font-semibold'>Beginner Bricklaying and Plastering Courses:</span> Perfect for those just starting in the trade, these courses provide foundational knowledge and essential skills needed to begin a career in bricklaying and plastering.</p></li><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)'/><p className='flex-[11]'><span className='font-semibold'>Advanced Techniques and Specializations: </span> For those looking to refine their craft, our advanced courses cover specialized techniques, including decorative brickwork, rendering, and advanced plastering methods.</p></li><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)'/><p className='flex-[11]'><span className='font-semibold'>Certification and Apprenticeship Programs:</span> We offer accredited certification courses and apprenticeship opportunities, giving students the credentials and real-world experience needed to excel in the industry.</p></li><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)'/><p className='flex-[11]'><span className='font-semibold'>Customized Training:</span> We also provide bespoke training solutions tailored to the needs of companies and individuals, ensuring that our students receive the most relevant and practical instruction.</p></li><br />
-            </ul>
-            <h5 className='font-bold'>Our Facilities</h5>
-            <br />
-            <p className='text-balance'>Our state-of-the-art training facility is equipped with everything students need to learn and practice their skills. From spacious workshops to advanced tools and materials, our academy is designed to replicate real-world conditions, ensuring that students gain valuable hands-on experience in a controlled and safe environment. Our instructors are industry veterans who bring a wealth of knowledge, experience, and passion for teaching, ensuring that each student receives personalized attention and mentorship.</p>
-            <br />
-            <h5 className='font-bold'>Why Choose Us?</h5>
-            <ul><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)'/><p className='flex-[11]'><span className='font-semibold'>Experienced Instructors: </span> Our team consists of seasoned professionals who have spent decades in the field. They are dedicated to passing on their knowledge and expertise to the next generation of tradespeople.</p></li><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)'/><p className='flex-[11]'><span className='font-semibold'>Comprehensive Curriculum: </span> Our courses are developed in collaboration with industry experts to ensure they are relevant, up-to-date, and aligned with current standards and best practices.</p></li><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)'/><p className='flex-[11]'><span className='font-semibold'>Career Support:</span> We provide ongoing support to our students, including job placement assistance, career advice, and access to a network of industry professionals.</p></li><br />
-                <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)'/><p className='flex-[11]'><span className='font-semibold'>Community and Networking:</span> When you join Bailey&apos;s, you become part of a supportive community of like-minded individuals who are passionate about the trade. Our alumni network offers valuable opportunities for networking and career growth.</p></li><br />
-            </ul>
-            <div className=' relative p-[1rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8 border border-[rgb(252,186,3)] border-[1px] aspect-[16/6] mb-[2rem] '>
-                <div className='absolute inset-[1rem] '>
-                    <Image 
-                        style={{objectFit: "cover"}}
-                        sizes="100vw" 
-                        src="/bricklay.jpg"
-                        alt="Background Image"
-                        fill // Can be 'contain', 'cover', or 'none' based on your needs
-                        quality={100} // Optional: Specify the quality of the image/
-                    />
-                </div>
-            </div>
-
-            <h5 className='font-bold'>Join Us Today!</h5>
-            <br />
-            <p className='text-balance'>Whether you are just starting out or looking to enhance your skills, Bailey&apos;s Bricklaying & Plastering Academy is here to help you build a solid foundation for your future. Our commitment to quality education and training ensures that you will receive the best possible preparation for a successful career in the construction industry.</p>
-            <br />
-            <p className='text-balance'>Explore our courses, meet our instructors, and discover what makes Bailey&apos;s Bricklaying & Plastering Academy the preferred choice for aspiring bricklayers and plasterers. We look forward to helping you lay the first brick on your path to success!</p>
-            <br />
-            <h5 className='font-bold'>Contact Us</h5>
-            <br />
-            <p className='text-balance'>Ready to take the next step? Contact us today to learn more about our courses, schedule a tour of our facilities, or speak with one of our advisors.</p>
+          <h5 className='font-bold'>Join Us Today!</h5>
+          <br />
+          <p className='text-balance'>If you are looking to start or advance your skills, Essex Bricklaying & Plastering School is here to help you build a strong foundation for your future. Our hands-on approach ensures you are well-prepared for a successful career in the construction industry.</p>
+          <br />
+          <p className='text-balance'>Explore our courses, meet our team, and see why Essex Bricklaying & Plastering School is a great choice for learning the trade. We look forward to helping you get started!</p>
+          <br />
+          <h5 className='font-bold'>Contact Us</h5>
+          <br />
+          <p className='text-balance'>Ready to take the next step? Reach out to us to learn more about our courses, book a tour, or speak with one of our advisors.</p>
         </div>
-          
-    </div>
-</section>
+      </div>
+    </section>
   )
 }
 
-export default page
+export default About

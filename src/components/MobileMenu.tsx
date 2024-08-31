@@ -28,14 +28,14 @@ const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(isOpen => !isOpen);
   };
 
   return (
     <div>
       {/* Menu Button */}
-      <div onClick={toggleMenu} className='fixed cursor-pointer right-[5vw] top-[22px] w-[30px] h-[16px] z-10 flex flex-col justify-between md:hidden'>
-        <span className='w-[100%] h-[2px] bg-[white]'></span>
+      <div onClick={toggleMenu} className='fixed cursor-pointer right-[5vw] top-[22px] w-[30px] h-[16px] z-[101] flex flex-col justify-between md:hidden'>
+        <span className='w-[100%] h-[2pxss] bg-[white]'></span>
         <span className='w-[100%] h-[2px] bg-[white]'></span>
         <span className='w-[100%] h-[2px] bg-[white]'></span>
      

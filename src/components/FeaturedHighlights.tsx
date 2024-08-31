@@ -1,35 +1,37 @@
 import { FeaturedHighlightsTile } from "./FeaturedHighlightsTile";
-const featuredHighlights = [ 
-    {   icon: 'brick',
-        title: "Hands-On Learning Experience", 
-        description: "We believe in learning by doing. Our courses provide extensive hands-on training with real-world projects, ensuring you gain practical skills and experience. Work directly with tools and materials to master bricklaying and plastering techniques." 
-    }, 
-    { 
-        icon: 'pencil',
-        title: "Experienced Instructors", 
-        description: "Learn from the best in the industry. Our instructors are seasoned professionals with years of experience in bricklaying and plastering. They bring practical knowledge, insights, and tips to help you excel in your career." 
-    }, 
-    { 
-        icon: 'building',
-        title: "State-of-the-Art Facilities", 
-        description: "Train in a modern, fully-equipped environment. Our academy features state-of-the-art facilities with the latest tools and equipment, providing an optimal learning experience and preparing you for real-world construction sites." 
-    }, 
-    { 
-        icon: 'calendar',
-        title: "Flexible Scheduling", 
-        description: "We offer flexible course schedules to fit your busy life. Whether you're a full-time worker, a student, or looking to switch careers, our morning, evening, and weekend classes are designed to accommodate your needs." 
-    }, 
-    { 
-        icon: 'graduation',
-        title: "Industry-Recognized Certifications", 
-        description: "Boost your career with certifications that matter. Our courses are accredited and recognized by industry leaders, giving you a competitive edge in the job market. Demonstrate your skills and knowledge with qualifications that employers trust." 
-    }, 
-    { 
-        icon: 'job',
-        title: "Career Support and Job Placement", 
-        description: "Your success is our priority. We provide comprehensive career support, including resume building, interview coaching, and job placement services. Benefit from our strong network of industry connections to jumpstart your career in bricklaying and plastering." 
-    } 
-];
+const featuredHighlights = [
+    {
+      icon: 'brick',
+      title: "Hands-On Learning Experience",
+      description: "We believe in learning by doing. Our courses provide extensive hands-on training with practical projects, ensuring you gain real skills and experience. Work directly with the tools and materials used in the industry to master bricklaying and plastering techniques."
+    },
+    {
+      icon: 'pencil',
+      title: "Experienced Instructors",
+      description: "Learn from skilled professionals. Our instructors have years of experience in bricklaying and plastering, bringing valuable knowledge, insights, and tips to help you excel in your learning journey."
+    },
+    {
+      icon: 'building',
+      title: "Practical Training Environment",
+      description: "Train in a realistic setting equipped to provide a hands-on experience. Our facilities are designed to offer you the practice you need to prepare for work on actual construction sites."
+    },
+    {
+      icon: 'blocks',
+      title: "Small Class Sizes",
+      description: "Benefit from personalized attention with our small class sizes. This ensures that you receive the guidance and support you need to develop your skills effectively and confidently."
+    },
+    {
+      icon: 'graduation',
+      title: "Community-Focused Learning",
+      description: "Join a supportive community of learners. Our school fosters a friendly environment where you can collaborate with peers, share experiences, and grow together as you develop your skills."
+    },
+    {
+      icon: 'job',
+      title: "Real-World Application",
+      description: "Learn skills that are directly applicable to real-life situations. Whether you're preparing for a career in construction or tackling DIY projects, our training ensures you're ready to apply what you've learned."
+    }
+  ];
+  
 
 
 const FeaturedHighlights = () => {

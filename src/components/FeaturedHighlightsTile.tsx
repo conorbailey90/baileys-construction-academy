@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion"
-import { CalendarClockIcon, Building, GraduationCap, PencilRulerIcon, BrickWall, Cuboid  } from 'lucide-react';
+import { CalendarClockIcon, Building, GraduationCap, PencilRulerIcon, BrickWall, Cuboid, Blocks  } from 'lucide-react';
 
 export const FeaturedHighlightsTile = ({idx, icon, title, description}: {idx: number, icon: any, title: String, description: String}) => {
     return (
@@ -15,7 +15,7 @@ export const FeaturedHighlightsTile = ({idx, icon, title, description}: {idx: nu
             {icon == 'graduation' && <GraduationCap strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
             {icon == 'building' && <Building strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
             {icon == 'pencil' && <PencilRulerIcon strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
-            {icon == 'calendar' && <CalendarClockIcon strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
+            {icon == 'blocks' && <Blocks strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
             {icon == 'job' && <Cuboid strokeWidth={'1px'} size={50} className='mb-[1rem]' />}
             <div className='mb-[1rem]'>
                 <h6 className='text-[rgb(252,186,3)] font-bold'>{title}</h6>    

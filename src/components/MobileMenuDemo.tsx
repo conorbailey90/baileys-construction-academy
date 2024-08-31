@@ -63,7 +63,7 @@ const MobileMenuDemo = () => {
   return (
     <div>
       {/* Menu Button */}
-      <div onClick={toggleMenu} className='fixed cursor-pointer right-[5vw] top-[22px] w-[30px] h-[16px] z-10 flex flex-col justify-between md:hidden'>
+      <div onClick={toggleMenu} className='fixed cursor-pointer right-[5vw] top-[22px] w-[30px] h-[16px] z-[101] flex flex-col justify-between md:hidden'>
         <span className='w-[100%] h-[2px] bg-[white]'></span>
         <span className='w-[100%] h-[2px] bg-[white]'></span>
         <span className='w-[100%] h-[2px] bg-[white]'></span>
@@ -80,7 +80,7 @@ const MobileMenuDemo = () => {
           padding: '100px 5vw',
           width: '100%',
           height: '100%',
-          zIndex: 100,
+          zIndex: 102,
           transform: isOpen ? `translateX(100%)` : 'translateX(0)',
           transition: '.5s'
         }}>
@@ -91,10 +91,10 @@ const MobileMenuDemo = () => {
             <ul className='relative w-[100%]'>
             {links.map((link, idx) => (
                 link.subMenu ? 
-                <li key={idx} className='w-[100%]'>
+                <li  key={idx} className='w-[100%]'>
                     <Accordion className='' type="single" collapsible>
-                        <AccordionItem value="item-1">
-                            <AccordionTrigger className='font-bold text-[1.44rem] hover:no-underline'>{link.name}</AccordionTrigger>
+                        <AccordionItem style={{borderBottom: '1px solid rgb(252,186,3)'}} value="item-1">
+                            <AccordionTrigger  className='font-bold text-[1.44rem] hover:no-underline'>{link.name}</AccordionTrigger>
                             {link.subMenu.map(link => (
                                 <AccordionContent key={link.name}>
                                     <Link className='font-bold text-lg pl-[1rem] hover:text-[rgb(252,186,3)]' onClick={toggleMenu} href={link.href}>
@@ -107,7 +107,7 @@ const MobileMenuDemo = () => {
                 </li>
             
                 :
-                <li key={idx} onClick={toggleMenu} style={{borderBottom: '1px solid rgba(255, 255, 255, 255)'}} className='w-[100%]'>
+                <li key={idx} onClick={toggleMenu} style={{borderBottom: '1px solid rgb(252,186,3)'}} className='w-[100%]'>
                     <Link href={link.href}>
                         <span className='inline-block cursor-pointer font-bold text-[1.44rem] py-[1rem] w-[100%] hover:text-[rgb(252,186,3)]'> 
                             {link.name}
