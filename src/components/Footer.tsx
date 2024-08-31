@@ -26,26 +26,17 @@ const Footer = () => {
                 <h6 className='font-semibold'>Courses</h6>
                 <br />
                 <ul>
-                    <li><Link href={'/'}>Profesional Bricklaying</Link></li>
-                    <li><Link href={'/'}>Profesional Plastering</Link></li>
-                    <li><Link href={'/'}>DIY Bricklaying</Link></li>
-                    <li><Link href={'/'}>DIY Bricklaying</Link></li>
+                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/bricklaying'}>Profesional Bricklaying</Link></li>
+                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/plastering'}>Profesional Plastering</Link></li>
+                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/bricklaying'}>DIY Bricklaying</Link></li>
+                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/plastering'}>DIY Plastering</Link></li>
                 </ul>
             </div>
-            <div className='col-span-12 hidden md:flex flex-col mt-[2rem] md:col-span-6'>
-                <h6 className='font-semibold'>Menu</h6>
-                <br />
-                <ul>
-                    <li><Link href={'/'}>About</Link></li>
-                    <li><Link href={'/'}>Meet the Team</Link></li>
-                    <li><Link href={'/'}>News</Link></li>
-                    <li><Link href={'/'}>Contact</Link></li>
-                </ul>
-            </div>
+
             <div className='col-span-12 mt-[2rem] md:col-span-6'>
                 <h6 className='font-semibold'>Address</h6>
                 <br />
-                <p>Unit 16 Ilford Trading Estate</p>
+                <p>Unit 15 Ilford Trading Estate</p>
                 <p>Paycocke Road</p>
                 <p>Basildon</p>
                 <p>SS14 3DR</p>

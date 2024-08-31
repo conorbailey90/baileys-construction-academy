@@ -18,7 +18,7 @@ const page = () => {
               </div>
               
               <div className='flex-[10]'>
-                <p className='font-semibold text-lg'>Unit 16 Ilford Trading Estate</p>
+                <p className='font-semibold text-lg'>Unit 15 Ilford Trading Estate</p>
                 <p className='font-semibold text-lg'>Paycocke Road</p>
                 <p className='font-semibold text-lg'>Basildon</p>
                 <p className='font-semibold text-lg'>Essex</p>

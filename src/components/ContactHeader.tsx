@@ -15,7 +15,7 @@ const ContactHeader = () => {
           </div>
           <div className=' flex items-center h-[100%] mr-[2rem]'>
             <MapPin strokeWidth={'1px'}color='black' className='mr-[.5rem]' />
-            <p className='text-[#161616] font-semibold text-xs'>Unit 16 Ilford Trading Estate, Paycocke Road, Basildon, Essex,  SS14 3DR</p>
+            <p className='text-[#161616] font-semibold text-xs'>Unit 15 Ilford Trading Estate, Paycocke Road, Basildon, Essex,  SS14 3DR</p>
           </div>
         </div>
     </div>

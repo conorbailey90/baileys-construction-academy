@@ -1,282 +1,158 @@
 import Image from "next/image";
-import { Check } from "lucide-react";
+import { Check } from 'lucide-react';
 
 const page = () => {
   return (
-    <section
-      id="about"
-      className="relative w-[100%] min-h-[500px] flex justify-center bg-[#161616] pt-[40px] md:pt-[100px]"
-    >
-      <div className="w-[95%] max-w-[1880px] relative z-2 pt-[30px] pb-[30px] grid grid-cols-12 auto-rows-min gap-[10px]">
-        <div className="pb-[2rem] col-start-1 col-span-12">
-          <h4 className="font-bold">Plastering Courses</h4>
-          <br />
-          <p className="text-balance">
-            We offer comprehensive plastering courses tailored to meet the needs
-            of both DIY enthusiasts and aspiring professionals. Our courses are
-            designed to provide practical, hands-on experience with expert
-            instruction from seasoned plasterers. Whether you&apos;re looking to
-            enhance your home improvement skills or build a career in
-            plastering, we have the right course for you.
-          </p>
+    <section id='about' className='relative w-[100%] min-h-[500px] flex justify-center bg-[#161616] pt-[40px] md:pt-[100px]'>
+
+      <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] pb-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
+        
+        <div className='pb-[2rem] col-span-12 md:col-span-6'>
+          <h4 className='font-bold text-[white]'>Plastering Courses</h4><br />
+          <p className="text-[white]">We offer comprehensive plastering courses tailored to meet the needs of both DIY enthusiasts and aspiring professionals. Our courses provide practical, hands-on experience with expert instruction from seasoned plasterers. Whether you're looking to enhance your home improvement skills or build a career in plastering, we have the right course for you.</p>
         </div>
-
-        {/* Professional Plastering Course */}
-        <div className="col-span-12 md:col-span-6 bg-[black] p-[2rem] border border-[black] border-[1px] rounded-[5px] bg-gradient-to-br from-[#FABC3C] to-[#FACC6B]">
-          <h3 className="font-bold text-[black]">Professional</h3>
+        {/* Professional */}
+        <div className="col-span-12 row-start-2 md:col-span-6 bg-[black] p-[2rem] border border-[black] border-[1px] rounded-[5px] bg-gradient-to-br from-[#FABC3C] to-[#FACC6B]">
+          <h3 className='font-bold text-[black]'>Professional</h3>
           <br />
-
-          <h5 className="font-bold text-[black]">Course Features</h5>
-          <ul>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  Comprehensive Plastering Techniques:
-                </span>{" "}
-                Learn both basic and advanced plastering techniques, including
-                skimming, bonding, and applying different types of plaster.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  Advanced Wall Finishes:
-                </span>{" "}
-                Gain expertise in creating smooth and textured finishes, as well
-                as decorative plastering techniques.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  Ceiling Plastering:
-                </span>{" "}
-                Master the art of plastering ceilings, including curved and
-                arched ceilings.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  Dry Lining and Plasterboarding:
-                </span>{" "}
-                Learn how to install and plaster plasterboards for modern
-                construction and renovations.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  External Plastering:
-                </span>{" "}
-                Understand the techniques for rendering and plastering external
-                walls to ensure durability and weather resistance.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  Health and Safety Regulations:
-                </span>{" "}
-                Comprehensive coverage of health and safety regulations relevant
-                to construction sites and plastering.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  Tools and Equipment Use:
-                </span>{" "}
-                Training on the use of professional plastering tools and
-                equipment.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  Job Readiness:
-                </span>{" "}
-                Guidance on building a professional portfolio, interview
-                preparation, and securing plastering jobs.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">
-                  On-site Work Experience:
-                </span>{" "}
-                Gain real-world experience with supervised on-site training,
-                working on live projects.
-              </p>
-            </li>
-            <br />
+          <h5 className='font-bold text-[black]'>Course Overview</h5><br />
+          <p className='text-[black]'>This intensive 5-day plastering course is designed for individuals looking to gain practical skills and knowledge in plastering, culminating in an NVQ qualification. Participants will learn essential techniques and safety protocols while working on various plastering applications.</p>
+          <br />
+          <h5 className='font-bold text-[black]'>Day-by-Day Breakdown</h5><br />
+          <ul className='text-[black]'>
+            <li><span className='font-semibold text-[black]'>Day 1: Introduction and Fundamentals</span></li><br />
+            <ul>
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Morning Session: Introduction to the course and overview of NVQ qualification requirements. Health and Safety Training: Focus on site safety, including handling of plastering materials.</p></li><br />
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Afternoon Session: Introduction to Tools and Materials: Understanding plastering tools and mixing materials. Reading Plastering Plans: Interpreting plastering designs and plans. Practical Activity: Begin applying plaster on a small wall section.</p></li>
+            </ul><br />
+            <li><span className='font-semibold text-[black] '>Day 2: Skill Development</span></li><br />
+            <ul>
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Morning Session: Practical Exercise: Reapply plaster on the wall section to refine technique and consistency.</p></li><br />
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Afternoon Session: Advanced Plastering: Techniques for applying plaster to complex surfaces and achieving a smooth finish.</p></li><br />
+            </ul>
+            <li><span className='font-semibold text-[black]'>Day 3: Advanced Techniques</span></li><br />
+            <ul>
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Morning Session: Dry Lining and Plasterboard Installation: Introduction to dry lining techniques and plasterboard fitting.</p></li><br />
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Afternoon Session: Practical Application: Install plasterboard and apply finishing plaster to create a seamless surface.</p></li><br />
+            </ul>
+            <li><span className='font-semibold text-[black]'>Day 4: Mastery of Plastering</span></li><br />
+            <ul>
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Full Day Activity: Hands-on Practice: Continue refining plastering skills with various wall and ceiling surfaces.</p></li><br />
+            </ul>
+            <li><span className='font-semibold text-[black]'>Day 5: Finishing Touches</span></li><br />
+            <ul>
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Morning Session: Decorative Plastering Techniques: Learn techniques for decorative plaster finishes, including textures and patterns.</p></li><br />
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Afternoon Session: Quality Control: Ensuring high standards in plastering work, including common issues and troubleshooting.</p></li>
+            </ul>
+          </ul>
+          <br />
+          <h5 className='font-bold text-[black]'>Learning Outcomes</h5><br />
+          <ul className='text-[black]'>
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Accurately apply various plastering techniques and finishes.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Properly mix and apply plastering materials.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Install plasterboard and complete dry lining with professional standards.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Implement decorative plastering techniques for enhanced aesthetics.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Ensure high-quality finishes and identify common plastering issues.</p></li>
+          </ul>
+          <br />
+          <p className='text-[black]'>This guide is designed for both novice and experienced individuals seeking to enhance their plastering skills while achieving a recognized qualification. Join us for an enriching experience in the world of plastering!</p>
+          <br />
+          <h5 className='font-bold text-[black]'>Course Duration</h5>
+          <ul><br />
+            <li className='flex items-center '><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'><span className='font-semibold text-[black]'>5 Days: </span>Intensive full-time course covering all aspects of professional plastering.</p></li><br />
           </ul>
 
-          <h5 className="font-bold text-[black]">Course Duration</h5>
-          <ul>
-            <br />
-            <li className="flex items-center ">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">8 Weeks:</span>{" "}
-                Full-time course (Monday to Friday), ideal for those looking to
-                quickly enter the workforce.
-              </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="black" />
-              <p className="flex-[11] text-[black]">
-                <span className="font-semibold text-[black]">16 Weeks:</span>{" "}
-                Part-time course (weekends), for those balancing studies with
-                other commitments.
-              </p>
-            </li>
-            <br />
-          </ul>
-
-          <h5 className="font-bold text-[black]">Course Price:</h5>
+          <h5 className='font-bold text-[black]'>Course Price:</h5>
           <br />
-          <p className="text-[black]">
-            £1,500 (includes all materials, equipment, and on-site training)
-          </p>
-        </div>
+          <p className="text-[black]">£800 (includes all materials, equipment, and on-site training)</p>
 
-        {/* DIY Plastering Course */}
-        <div className="col-span-12 md:col-start-7 md:col-span-6 bg-[black] p-[2rem] border border-[rgb(252,186,3)] border-[1px] rounded-[5px]">
-          <h3 className="font-bold">DIY</h3>
+        </div>      
+
+
+        {/* DIY */}
+        <div className="col-span-12 row-start-3 md:row-start-2 md:col-start-7 md:col-span-6 bg-[black] p-[2rem] border border-[rgb(252,186,3)] border-[1px] rounded-[5px]">
+          <h3 className='font-bold text-[white]'>DIY</h3>
           <br />
 
-          <h5 className="font-bold">Course Features</h5>
-          <ul>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">
-                  Introduction to Plastering:
-                </span>{" "}
-                Learn the basics of plastering, including an overview of tools
-                and materials.
+          <h5 className='font-bold text-[white]'>Course Features</h5>
+          <ul className='text-[black]'><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>Introduction to Plastering: </span>
+                Learn the basics of plastering, including an overview of tools and materials.
               </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">Surface Preparation:</span>{" "}
-                Understand how to prepare different surfaces for plaster
-                application.
+            </li><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>Surface Preparation: </span>
+                Understand how to prepare surfaces for plastering, including cleaning and priming.
               </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">Basic Plaster Application:</span>{" "}
+            </li><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>Basic Plastering Techniques: </span>
                 Hands-on practice in applying plaster to walls and ceilings.
               </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">Mixing Plaster:</span> Learn the
-                right techniques for mixing plaster to achieve the best
-                consistency and strength.
+            </li><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>Mixing Plaster: </span>
+                Learn the right techniques for mixing plaster to achieve the best consistency and strength.
               </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">Finishing Techniques:</span>{" "}
-                Master the art of finishing plaster to ensure your work is
-                smooth and visually appealing.
+            </li><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>Finishing Techniques: </span>
+                Master the art of finishing to ensure your plastering is smooth and professional.
               </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">Safety Practices:</span>{" "}
-                Understand essential safety measures to prevent accidents and
-                ensure safe handling of materials.
+            </li><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>Safety Practices: </span>
+                Understand essential safety measures to prevent accidents and ensure safe handling of plastering materials.
               </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">Basic Repairs:</span> Learn how
-                to identify and repair common issues in plasterwork, such as
-                cracks and holes.
+            </li><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>Basic Repairs: </span>
+                Learn how to identify and repair common issues in plastering, such as cracks and uneven surfaces.
               </p>
-            </li>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">Custom Projects:</span> Receive
-                guidance on planning and executing your own small-scale
-                plastering projects, such as feature walls or patch repairs.
+            </li><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>Custom Projects: </span>
+                Receive guidance on planning and executing your own small-scale plastering projects.
               </p>
-            </li>
-            <br />
+            </li><br />
           </ul>
 
-          <h5 className="font-bold">Course Duration</h5>
-          <ul>
-            <br />
-            <li className="flex items-center">
-              <Check className="flex-[1]" size="20px" color="rgb(252,186,3)" />
-              <p className="flex-[11]">
-                <span className="font-semibold">2 Days:</span> Intensive weekend
-                workshop, perfect for those with a busy schedule.
+          <h5 className='font-bold text-[white]'>Course Duration</h5>
+          <ul><br />
+            <li className='flex items-center'>
+              <Check className='flex-[1]' size="20px" color='rgb(252,186,3)' />
+              <p className='flex-[11]'>
+                <span className='font-semibold'>2 Days: </span>
+                Intensive workshop
               </p>
-            </li>
-            <br />
+            </li><br />
           </ul>
 
-          <h5 className="font-bold">Course Price:</h5>
+          <h5 className='font-bold text-[white]'>Course Price:</h5>
           <br />
-          <p>£200 (includes all materials and equipment)</p>
+          <p className="text-[white]">£500 (includes all materials and equipment)</p>
         </div>
 
-        {/* Plastering Image (Optional) */}
-        {/* <div className='relative p-[1rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8 border border-[rgb(252,186,3)] border-[1px] aspect-[16/6] mb-[2rem] '>
-                <div className='absolute inset-[1rem] '>
-                    <Image 
-                        style={{objectFit: "cover"}}
-                        sizes="100vw" 
-                        src="/plastering.jpg"
-                        alt="Background Image"
-                        fill // Can be 'contain', 'cover', or 'none' based on your needs
-                        quality={100} // Optional: Specify the quality of the image/
-                    />
-                </div>
-            </div> */}
       </div>
     </section>
-  );
-};
+  )
+}
 
 export default page;
