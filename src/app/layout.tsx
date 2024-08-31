@@ -6,7 +6,8 @@ import Footer from "@/components/Footer";
 import ContactHeader from "@/components/ContactHeader";
 import "./globals.css";
 import MobileMenu from "@/components/MobileMenu";
-import { Toaster, toast } from 'sonner'
+import { Toaster } from 'sonner'
+import NavigationMenuDemo from "@/components/NavigationMenuDemo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
           <ContactHeader />
-          <Navbar />
+          {/* <Navbar /> */}
+          <NavigationMenuDemo />
           <MobileMenu />
           {children}
           <Footer />

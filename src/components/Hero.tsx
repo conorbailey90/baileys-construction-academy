@@ -20,9 +20,6 @@ const Hero = () => {
         <div className='w-[95%] max-w-[1880px] relative z-2 pt-[180px] grid grid-cols-12 auto-rows-min gap-[10px]'>
             <div className='col-start-1 row-start-1 col-span-12 md:col-span-8 lg:col-span-6  '>
                 <h1 className='text-balance leading-[1.1] font-semibold'>Build Your Future with Expert Training in <span className='text-[rgb(252,186,3)]'>Bricklaying</span> & <span className='text-[rgb(252,186,3)]'>Plastering</span></h1>
-                {/* <h1 className='leading-[1.1] font-semibold'>Build Your Future</h1>
-                <h1 className='leading-[1.1] font-semibold'>with Expert Training </h1>
-                <h1 className='leading-[1.1] font-semibold'>in <span className='text-[rgb(252,186,3)]'>Bricklaying</span> & <span className='text-[rgb(252,186,3)]'>Plastering</span></h1> */}
             </div>
            
             <div className='col-start-1 col-span-12 md:col-span-8 md:col-start-1 pt-[1rem] lg:col-span-6 lg:col-start-1'>
@@ -30,7 +27,7 @@ const Hero = () => {
             </div>
 
             <div className='col-start-1 col-span-12 md:col-span-6 md:col-start-1 flex gap-[10px] pt-[1rem]'>
-                <Link href={'/'}>
+                <Link href={'/contact'}>
                     <div className='flex-1 p-4 bg-[rgb(252,186,3)] border border-[black] border-[1px] rounded-[5px]'>
                         <p className='text-black font-bold '>Enroll Today</p>
                     </div>

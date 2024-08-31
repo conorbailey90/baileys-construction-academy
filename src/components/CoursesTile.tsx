@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 
-export const CoursesTile = ({idx, title, description, details, image}: {idx: number, title: String, description: String, details: String, image: string }) => {
+export const CoursesTile = ({idx, title, description, details, image, href}: {idx: number, title: string, description: string, details: string, image: string, href: string }) => {
     return (
         <motion.div   
             initial={{ opacity: 0, y: 10 }} 
@@ -23,7 +23,7 @@ export const CoursesTile = ({idx, title, description, details, image}: {idx: num
             <div className='relative z-1 mt-[1rem]'>
                 <p className='text-balance'>{details}</p>
             </div>
-            <Link href={'/about'}>
+            <Link href={href}>
                 <button className='relative mt-[1rem] text-[rgb(252,186,3)] font-bold z-10'>Learn More</button>
             </Link>
         </motion.div>

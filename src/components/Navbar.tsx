@@ -1,6 +1,7 @@
 import styles from './Navbar.module.css';
 import Link from "next/link"
 
+
 const links = [
     {
         name: 'Home',
