@@ -8,6 +8,7 @@ import "./globals.css";
 import MobileMenu from "@/components/MobileMenu";
 import { Toaster } from 'sonner'
 import NavigationMenuDemo from "@/components/NavigationMenuDemo";
+import MobileMenuDemo from "@/components/MobileMenuDemo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,8 @@ export default function RootLayout({
           <ContactHeader />
           {/* <Navbar /> */}
           <NavigationMenuDemo />
-          <MobileMenu />
+          {/* <MobileMenu /> */}
+          <MobileMenuDemo />
           {children}
           <Footer />
           <Toaster />
