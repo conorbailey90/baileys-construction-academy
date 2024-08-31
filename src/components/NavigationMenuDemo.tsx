@@ -62,7 +62,7 @@ const NavLink = ({name, href, subMenu} : {name: string, href: string, subMenu: {
         <div className='absolute flex justify-center w-[200px] left-0 top-[100%] rounded-[5px] bg-[#161616] p-[1rem] border border-[rgb(252,186,3)] border-[1px] ' >
             <ul>
               {subMenu.map(link => (
-                <li className='m-[.5rem]'>
+                <li key={link.name} className='m-[.5rem]'>
                    <Link className='font-semibold hover:text-[rgb(252,186,3)]' href={link.href}>{link.name}</Link>
                 </li>
               ))}
@@ -82,7 +82,7 @@ const NavigationMenuDemo = () => {
           <div className=" hidden md:flex col-span-6 items-center">
             <ul className='flex'>
                 {links.map(link => (
-                    <NavLink name={link.name} href={link.href} subMenu={link.subMenu || []} />
+                    <NavLink key={link.name} name={link.name} href={link.href} subMenu={link.subMenu || []} />
                 ))}
             </ul>
           </div>

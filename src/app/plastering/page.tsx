@@ -15,7 +15,7 @@ const page = () => {
             We offer comprehensive plastering courses tailored to meet the needs
             of both DIY enthusiasts and aspiring professionals. Our courses are
             designed to provide practical, hands-on experience with expert
-            instruction from seasoned plasterers. Whether you're looking to
+            instruction from seasoned plasterers. Whether you&apos;re looking to
             enhance your home improvement skills or build a career in
             plastering, we have the right course for you.
           </p>
