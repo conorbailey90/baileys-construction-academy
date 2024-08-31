@@ -7,7 +7,7 @@ const page = () => {
 
       <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] pb-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
         
-        <div className='relative pb-[2rem] col-span-12'>
+        <div className='relative pb-[2rem] col-span-12 md:col-span-6'>
           <h4 className='font-bold text-[white]'>Bricklaying Courses</h4><br />
           <p className="text-[white]">We offer comprehensive bricklaying courses tailored to meet the needs of both DIY enthusiasts and aspiring professionals. Our courses are designed to provide practical, hands-on experience with expert instruction from seasoned bricklayers. Whether you&apos;re looking to enhance your home improvement skills or build a career in bricklaying, we have the right course for you.</p>
         </div>
