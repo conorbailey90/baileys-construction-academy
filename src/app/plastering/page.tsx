@@ -9,7 +9,7 @@ const page = () => {
         
         <div className='pb-[2rem] col-span-12 md:col-span-6'>
           <h4 className='font-bold text-[white]'>Plastering Courses</h4><br />
-          <p className="text-[white]">We offer comprehensive plastering courses tailored to meet the needs of both DIY enthusiasts and aspiring professionals. Our courses provide practical, hands-on experience with expert instruction from seasoned plasterers. Whether you're looking to enhance your home improvement skills or build a career in plastering, we have the right course for you.</p>
+          <p className="text-[white]">We offer comprehensive plastering courses tailored to meet the needs of both DIY enthusiasts and aspiring professionals. Our courses provide practical, hands-on experience with expert instruction from seasoned plasterers. Whether you&apos;re looking to enhance your home improvement skills or build a career in plastering, we have the right course for you.</p>
         </div>
         {/* Professional */}
         <div className="col-span-12 row-start-2 md:col-span-6 bg-[black] p-[2rem] border border-[black] border-[1px] rounded-[5px] bg-gradient-to-br from-[#FABC3C] to-[#FACC6B]">
