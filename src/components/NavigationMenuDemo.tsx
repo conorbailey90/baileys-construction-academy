@@ -47,7 +47,8 @@ const links = [
 
 
 const NavLink = ({name, href, subMenu} : {name: string, href: string, subMenu: {name: string, href: string}[] | []}) => {
-
+  const logStyle = 'background-color: black; color: white; font-style: bold; border: 2px solid white; font-size: 1em;'
+  console.log("%cDeveloped by Conor Bailey - www.conorbailey.dev", logStyle);
   const [active, setActive] = useState(false);
 
   const handleMouseEnter = () => {
