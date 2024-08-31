@@ -97,7 +97,7 @@ const MobileMenuDemo = () => {
                             <AccordionTrigger className='font-bold text-[1.44rem] hover:no-underline'>{link.name}</AccordionTrigger>
                             {link.subMenu.map(link => (
                                 <AccordionContent>
-                                    <Link className='font-bold text-lg pl-[1rem] hover:text-[rgb(252,186,3)]' onClick={toggleMenu} href={link.href}>
+                                    <Link key={link.name} className='font-bold text-lg pl-[1rem] hover:text-[rgb(252,186,3)]' onClick={toggleMenu} href={link.href}>
                                         {link.name}
                                     </Link>
                                 </AccordionContent>
