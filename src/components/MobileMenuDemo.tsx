@@ -20,6 +20,11 @@ const links = [
         name: 'About',
         href: '/about',
         subMenu: [
+    
+          {
+            name: 'Overview',
+            href: '/about'
+          },
           {
             name: 'Meet the Team',
             href: '/team'
@@ -83,29 +88,28 @@ const MobileMenuDemo = () => {
                 <span className='absolute w-[100%] h-[2px] bg-[white] rotate-[-45deg]'></span>
                 <span className='absolute w-[100%] h-[2px] bg-[white] rotate-[45deg]'></span>
             </div>
-            <ul className='w-[100%]'>
+            <ul className='relative w-[100%]'>
             {links.map((link, idx) => (
                 link.subMenu ? 
-                <li>
- <              Accordion className='w-[100%]' type="single" collapsible>
-                    <AccordionItem className='flex' value="item-1">
-                        <AccordionTrigger className=' cursor-pointer font-bold text-left text-[1.44rem] py-[1rem]'>{link.name}</AccordionTrigger>
-                        {link.subMenu.map(link => (
-                            <Link onClick={toggleMenu} href={link.href}>
-                                <AccordionContent >
-                                    {link.name}
+                <li key={idx} className='w-[100%]'>
+                    <Accordion className='' type="single" collapsible>
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger className='font-bold text-[1.44rem] hover:no-underline'>{link.name}</AccordionTrigger>
+                            {link.subMenu.map(link => (
+                                <AccordionContent>
+                                    <Link className='font-bold text-lg pl-[1rem] hover:text-[rgb(252,186,3)]' onClick={toggleMenu} href={link.href}>
+                                        {link.name}
+                                    </Link>
                                 </AccordionContent>
-                            </Link>
-                        ))}
-                      
-                    </AccordionItem>
+                            ))}
+                        </AccordionItem>
                     </Accordion>
                 </li>
             
                 :
-                <li onClick={toggleMenu}  style={{borderBottom: '1px solid rgba(255, 255, 255, 0.51)'}} className='w-[100%]' key={idx}>
+                <li key={idx} onClick={toggleMenu}  style={{borderBottom: '1px solid rgba(255, 255, 255, 255)'}} className='w-[100%]'>
                     <Link href={link.href}>
-                        <span className='inline-block cursor-pointer font-bold text-[1.44rem] py-[1rem] w-[100%]'> 
+                        <span className='inline-block cursor-pointer font-bold text-[1.44rem] py-[1rem] w-[100%] hover:text-[rgb(252,186,3)]'> 
                             {link.name}
                         </span>
                     </Link>
