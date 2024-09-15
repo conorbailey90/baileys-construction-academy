@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider"
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactHeader from "@/components/ContactHeader";
 import "./globals.css";
-import MobileMenu from "@/components/MobileMenu";
 import { Toaster } from 'sonner'
 import NavigationMenuDemo from "@/components/NavigationMenuDemo";
 import MobileMenuDemo from "@/components/MobileMenuDemo";
+import { SessionProvider } from "next-auth/react";
+import { Session } from "next-auth";
+import { ThemeProvider } from "@/components/ThemeProvider"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,20 +19,30 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  session
 }: Readonly<{
   children: React.ReactNode;
+  session: Session;
 }>) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning={true}  lang="en">
       <body className={inter.className}>
-          <ContactHeader />
-          {/* <Navbar /> */}
-          <NavigationMenuDemo />
-          {/* <MobileMenu /> */}
-          <MobileMenuDemo />
-          {children}
-          <Footer />
-          <Toaster />
+
+        <SessionProvider session={session}>
+          <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+          >
+            <ContactHeader />
+            <NavigationMenuDemo />
+            <MobileMenuDemo />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </SessionProvider>
+        <Toaster />
       </body>
     </html>
   );

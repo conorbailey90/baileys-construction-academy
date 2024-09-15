@@ -50,6 +50,10 @@ const links = [
         name: 'Contact',
         href: '/contact'
     },
+    {
+        name: 'Enroll',
+        href: '/enroll'
+    },
   ]
 
 

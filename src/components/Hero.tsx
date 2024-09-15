@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
 
             <div className='col-start-1 col-span-12 md:col-span-6 md:col-start-1 flex gap-[10px] pt-[1rem]'>
-                <Link href={'/contact'}>
+                <Link href={'/enroll'}>
                     <div className='flex-1 p-4 bg-[rgb(252,186,3)] border border-[black] border-[1px] rounded-[5px]'>
                         <p className='text-black font-bold '>Enroll Today</p>
                     </div>
