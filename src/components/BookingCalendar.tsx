@@ -118,15 +118,15 @@ export default function BookingCalendar({
                                       user.id, 
                                       course, 
                                       selectedDates[0], 
-                                      firstname.current.value,
-                                      lastname.current.value,
-                                      address1.current.value,
-                                      address2.current.value,
-                                      city.current?.value,
-                                      county.current.value,
-                                      country.current.value,
-                                      postcode.current.value,
-                                      phone.current.value
+                                      firstname.current!.value,
+                                      lastname.current!.value,
+                                      address1.current!.value,
+                                      address2.current!.value,
+                                      city.current!.value,
+                                      county.current!.value,
+                                      country.current!.value,
+                                      postcode.current!.value,
+                                      phone.current!.value
 
                                         )
           if(response.error){
