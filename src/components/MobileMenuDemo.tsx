@@ -134,7 +134,7 @@ const MobileMenuDemo = () => {
                 </li>
             ))}
            </ul>
-           <div style={{background: 'linear-gradient(to right, transparent, white, transparent)'}} className='w-[100%] h-[3px] my-[0rem]'></div>
+           <div style={{background: 'linear-gradient(to right, transparent, white, transparent)'}} className='w-[100%] h-[1px] my-[0rem]'></div>
             {!session ? 
             <div>
               <h4 className='font-bold my-[1rem] text-[1.44rem] text-center'>Sign in With Google</h4>
@@ -145,7 +145,7 @@ const MobileMenuDemo = () => {
             :
             
             <ul className='my-[1rem]'>
-              <li style={{borderBottom: '1px solid rgb(252,186,3)'}} className='py-[.5rem] font-bold text-[1.44rem] hover:text-[rgb(252,186,3)]'><Link href={'/profile'}>Your Account</Link></li>  
+              <li style={{borderBottom: '1px solid rgb(252,186,3)'}} className='py-[.5rem] font-bold text-[1.44rem] hover:text-[rgb(252,186,3)]'><Link onClick={toggleMenu} href={'/profile'}>Your Account</Link></li>  
               <li style={{borderBottom: '1px solid rgb(252,186,3)'}}  className='py-[.5rem] cursor-pointer font-bold text-[1.44rem] hover:text-[rgb(252,186,3)]' onClick={handleSignOutClick}>Sign Out</li>  
             </ul>}
         </div>
