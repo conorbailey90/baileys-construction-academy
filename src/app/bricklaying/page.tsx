@@ -22,7 +22,7 @@ const page = () => {
           <ul className='text-[black]'>
             <li><span className='font-semibold text-[black]'>Day 1: Introduction and Fundamentals</span></li><br />
             <ul>
-              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Morning Session: Introduction to the course and overview of NVQ qualification requirements. Health and Safety Training: Focus on site safety, including fire safety protocols.</p></li><br />
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Morning Session: Introduction to the course. Health and Safety Training: Focus on site safety, including fire safety protocols.</p></li><br />
               <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Afternoon Session: Introduction to Equipment: Setting up the mixer and mixing materials. Reading Drawings: Understanding wall designs and construction drawings. Practical Activity: Begin constructing a 4-inch wall with a corner based on a basic drawing.</p></li>
             </ul><br />
             <li><span className='font-semibold text-[black] '>Day 2: Skill Development</span></li><br />

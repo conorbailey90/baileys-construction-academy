@@ -6,17 +6,17 @@ import { CoursesTile } from './CoursesTile';
 const courses = [
     {
         title: "Bricklaying",
-        description: "Become a Certified Bricklaying Expert",
+        description: "Become a Competent Bricklaying Expert",
         details:
-          "Designed for those interested in construction, this comprehensive course covers bricklaying techniques, structural principles, and safety standards. Earn our certification and build a strong understanding in Bricklaying.",
+          "Designed for those interested in bricklaying and construction. This comprehensive course covers bricklaying techniques, structural principles, and safety standards. Earn our certification and build a strong understanding in Bricklaying.",
         image: '/bricklay.jpg',
         href: '/bricklaying'
       },
       {
         title: "Plastering",
-        description: "Achieve Industry-Recognized Certification",
+        description: "Become a Competent Plastering Expert",
         details:
-          "Master the art of plastering with our in-depth course that focuses on both traditional and modern techniques. From basic skills to advanced decorative finishes, earn our certification and build a strong understanding in plastering.",
+          "Designed for those pursuing a career in interested in construction and plastering. This comprehensive course covers advanced plastering techniques and safety standards. Earn our certification qualification and build a strong understanding in plastering.",
         href: '/plastering',
         image: '/plastering.jpeg',
       }

@@ -16,13 +16,13 @@ const page = () => {
           <h3 className='font-bold text-[black]'>Beginners</h3>
           <br />
           <h5 className='font-bold text-[black]'>Course Overview</h5><br />
-          <p className='text-[black]'>This intensive 5-day plastering course is designed for individuals looking to gain practical skills and knowledge in plastering, culminating in an NVQ qualification. Participants will learn essential techniques and safety protocols while working on various plastering applications.</p>
+          <p className='text-[black]'>This intensive 5-day plastering course is designed for individuals looking to gain practical skills and knowledge in plastering. Participants will learn essential techniques and safety protocols while working on various plastering applications.</p>
           <br />
           <h5 className='font-bold text-[black]'>Day-by-Day Breakdown</h5><br />
           <ul className='text-[black]'>
             <li><span className='font-semibold text-[black]'>Day 1: Introduction and Fundamentals</span></li><br />
             <ul>
-              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Morning Session: Introduction to the course and overview of NVQ qualification requirements. Health and Safety Training: Focus on site safety, including handling of plastering materials.</p></li><br />
+              <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Morning Session: Introduction to the course. Health and Safety Training: Focus on site safety, including handling of plastering materials.</p></li><br />
               <li className='flex items-center'><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'>Afternoon Session: Introduction to Tools and Materials: Understanding plastering tools and mixing materials. Reading Plastering Plans: Interpreting plastering designs and plans. Practical Activity: Begin applying plaster on a small wall section.</p></li>
             </ul><br />
             <li><span className='font-semibold text-[black] '>Day 2: Skill Development</span></li><br />
@@ -59,7 +59,7 @@ const page = () => {
           <br />
           <h5 className='font-bold text-[black]'>Course Duration</h5>
           <ul><br />
-            <li className='flex items-center '><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'><span className='font-semibold text-[black]'>5 Days: </span>Intensive full-time course covering all aspects of professional plastering.</p></li><br />
+            <li className='flex items-center '><Check className='flex-[1]' size="20px" color='black' /><p className='flex-[11] text-[black]'><span className='font-semibold text-[black]'>5 Days: </span>Intensive 5-day course covering all aspects of professional plastering.</p></li><br />
           </ul>
 
           <h5 className='font-bold text-[black]'>Course Price:</h5>
