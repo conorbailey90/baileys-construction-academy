@@ -1,15 +1,6 @@
 'use server';
 import { sql } from "@vercel/postgres";
-
-// firstname.current.value,
-// lastname.current.value,
-// address1.current.value,
-// address2.current.value,
-// city.current?.value,
-// county.current.value,
-// country.current.value,
-// postcode.current.value,
-// phone.current.value
+import { redirect } from "next/navigation";
 
 export async function book(
   customerId: string, 
@@ -60,6 +51,5 @@ export async function book(
                                   phone_number = ${phone}
                                   WHERE id = ${customerId};`
   let newBooking = await sql`INSERT INTO bookings (customer_id, course_id, date) VALUES (${customerId}, ${courseId}, ${formattedDate})`;
-  
   return { success: true };
 }

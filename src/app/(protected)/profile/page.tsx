@@ -12,6 +12,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 const months = [
   "January", 
@@ -75,10 +77,14 @@ const ProfilePage = async () => {
         </TableBody>
       </Table>
       :
-      
-      <h4>You do not have currently have any course bookings.</h4>}
-        
+        <div>
+           <h4>You do not have currently have any course bookings.</h4>
+           <Button className="my-[1rem] font-bold bg-[rgb(255,186,3)] hover:bg-[rgb(255,186,3)] hover:opacity-[.5]"><Link href={'/enroll'}>Enroll Now</Link></Button>
         </div>
+       
+        }
+        
+      </div>
     </div>
   )
 }

@@ -6,8 +6,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { toast } from "sonner"
 import { book } from '@/actions/bookings'
 import { Button } from '@/components/ui/button'
-import { add, format } from 'date-fns'
-import { startOfWeek, endOfWeek, eachDayOfInterval, isSameDay, isWeekend, isBefore } from 'date-fns'
+import { format } from 'date-fns'
+import { startOfWeek, endOfWeek, eachDayOfInterval, isSameDay, isWeekend} from 'date-fns'
+import { useRouter } from 'next/navigation';
 
 const toastOptions = {
   classNames: {
@@ -26,10 +27,10 @@ export default function BookingCalendar({
   courses: any[]
   bookingTotals: any[] | null
 }) {
-  console.log(user)
   const [selectedDates, setSelectedDates] = useState<Date[] | undefined>([])
   const [course, setCourse] = useState<number>(0)
   const [unavailableDays, setUnavailableDays] = useState<Date[]>([])
+  const router = useRouter();
 
   // Form references
   const firstname = useRef<HTMLInputElement | null>(null);
@@ -114,26 +115,29 @@ export default function BookingCalendar({
           return
         }
         if (courses.some((c: any) => c.id === course) && selectedDates) {
-          const response = await book(
-                                      user.id, 
-                                      course, 
-                                      selectedDates[0], 
-                                      firstname.current!.value,
-                                      lastname.current!.value,
-                                      address1.current!.value,
-                                      address2.current!.value,
-                                      city.current!.value,
-                                      county.current!.value,
-                                      country.current!.value,
-                                      postcode.current!.value,
-                                      phone.current!.value
-
-                                        )
-          if(response.error){
+          if(confirm(`You have selected the 5 day ${courses.find(c => c.id == course)?.name} course starting on ${selectedDates[0].toLocaleDateString()}. Click OK to confirm your booking.`)){
+            const response = await book(
+              user.id, 
+              course, 
+              selectedDates[0], 
+              firstname.current!.value,
+              lastname.current!.value,
+              address1.current!.value,
+              address2.current!.value,
+              city.current!.value,
+              county.current!.value,
+              country.current!.value,
+              postcode.current!.value,
+              phone.current!.value
+            )
+            if(response.error){
             toast.error(response.message, toastOptions);
             return
+            }
+            toast.success('Booking successful!', toastOptions)
+            router.push('/profile');
           }
-          toast.success('Booking successful!', toastOptions)
+        
         } else {
           toast.error('Please select a course from the menu.', toastOptions)
         }
@@ -141,6 +145,7 @@ export default function BookingCalendar({
         toast.error('Please sign in to book a course!', toastOptions)
       }
     } catch (err) {
+      console.log(err)
       toast.error('An error occurred while booking. Please try again or give us a call.', toastOptions)
     }
   }
@@ -152,7 +157,7 @@ export default function BookingCalendar({
   }
 
   return (
-      <div className='w-[100%] pt-[120px] flex flex-col items-center md:flex-row'>
+      <div className='w-[100%] pt-[120px] flex flex-col md:flex-row'>
         <div className='flex flex-col items-center flex-1 w-[100%]'>
           <div className='w-[100%]'>
             <h3 className="font-semibold mb-[1rem]">Select Course</h3>
@@ -213,19 +218,19 @@ export default function BookingCalendar({
               </div>
               }
            
-              <Button type="submit" className="w-full">Submit Booking</Button>
+              <Button type="submit" className="w-full bg-[rgb(252,186,3)] hover:bg-[rgb(252,186,3)] hover:opacity-[.5]">Submit Booking</Button>
             </form>
           </div>
         </div>
       
-        <div className='flex flex-col items-center flex-1 w-[100%]'>
-          <div className='w-[80%]'>
+        <div className='flex flex-col flex-1 w-[100%] p-[2rem]'>
+          <div className='w-[100%]'>
             <h5 className="font-semibold mt-[2rem] mb-[1rem]">
               Course Selected: <span className='text-[rgb(252,186,3)] '>{courses.find(c => c.id == course)?.name || 'None'}</span> 
             </h5>
           </div>
           
-          <div className='w-[80%] mb-[2rem]'>
+          <div className='w-[100%] mb-[2rem] '>
             <h5 className="font-semibold">Selected Weekdays (Monday to Friday):</h5>
             <ul className="list-disc pl-5 mt-[1rem]">
             {selectedDates?.map((date, index) => (
