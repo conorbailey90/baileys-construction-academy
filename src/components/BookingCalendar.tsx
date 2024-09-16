@@ -158,7 +158,9 @@ export default function BookingCalendar({
 
   return (
       <div className='w-[100%] pt-[120px] flex flex-col md:flex-row'>
+       
         <div className='flex flex-col items-center flex-1 w-[100%]'>
+        <h4 className='text-[rgb(252,186,3)] w-[100%] font-bold'>Now taking bookings from February 2025</h4>
           <div className='w-[100%]'>
             <h3 className="font-semibold mb-[1rem]">Select Course</h3>
           </div>
@@ -186,7 +188,7 @@ export default function BookingCalendar({
                 selected={selectedDates}
                 numberOfMonths={2}
                 onSelect={handleDateSelect}
-                fromDate={new Date()}
+                fromDate={new Date(2025, 1, 1)}
                 toDate={new Date(new Date().setFullYear(new Date().getFullYear() + 1))}
                 modifiers={{ booked: isDateBooked }}
                 modifiersStyles={{
