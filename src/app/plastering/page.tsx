@@ -7,13 +7,13 @@ const page = () => {
 
       <div className='w-[95%] max-w-[1880px] relative z-2 pt-[30px] pb-[30px] grid grid-cols-12 auto-rows-min gap-[10px]'>
         
-        <div className='pb-[2rem] col-span-12 md:col-span-6'>
-          <h4 className='font-bold text-[white]'>Plastering Courses</h4><br />
+        <div className='pb-[2rem] col-span-12 md:col-span-8 md:col-start-3'>
+          <h4 className='font-bold text-[white]'>Plastering Course</h4><br />
           <p className="text-[white]">We offer comprehensive plastering courses tailored to meet the needs of both DIY enthusiasts and aspiring professionals. Our courses provide practical, hands-on experience with expert instruction from seasoned plasterers. Whether you&apos;re looking to enhance your home improvement skills or build a career in plastering, we have the right course for you.</p>
         </div>
         {/* Professional */}
-        <div className="col-span-12 row-start-2 md:col-span-6 bg-[black] p-[2rem] border border-[black] border-[1px] rounded-[5px] bg-gradient-to-br from-[#FABC3C] to-[#FACC6B]">
-          <h3 className='font-bold text-[black]'>Professional</h3>
+        <div className="col-span-12 row-start-2 md:col-span-8 md:col-start-3 bg-[black] p-[2rem] border border-[black] rounded-[5px] bg-gradient-to-br from-[#FABC3C] to-[#FACC6B]">
+          <h3 className='font-bold text-[black]'>Beginners</h3>
           <br />
           <h5 className='font-bold text-[black]'>Course Overview</h5><br />
           <p className='text-[black]'>This intensive 5-day plastering course is designed for individuals looking to gain practical skills and knowledge in plastering, culminating in an NVQ qualification. Participants will learn essential techniques and safety protocols while working on various plastering applications.</p>
@@ -64,13 +64,13 @@ const page = () => {
 
           <h5 className='font-bold text-[black]'>Course Price:</h5>
           <br />
-          <p className="text-[black]">£800 (includes all materials, equipment, and on-site training)</p>
+          <p className="text-[black]">£795 (includes all materials, equipment, and on-site training)</p>
 
         </div>      
 
 
         {/* DIY */}
-        <div className="col-span-12 row-start-3 md:row-start-2 md:col-start-7 md:col-span-6 bg-[black] p-[2rem] border border-[rgb(252,186,3)] border-[1px] rounded-[5px]">
+        {/* <div className="col-span-12 row-start-3 md:row-start-2 md:col-start-7 md:col-span-6 bg-[black] p-[2rem] border border-[rgb(252,186,3)] border-[1px] rounded-[5px]">
           <h3 className='font-bold text-[white]'>DIY</h3>
           <br />
 
@@ -148,7 +148,7 @@ const page = () => {
           <h5 className='font-bold text-[white]'>Course Price:</h5>
           <br />
           <p className="text-[white]">£500 (includes all materials and equipment)</p>
-        </div>
+        </div> */}
 
       </div>
     </section>

@@ -15,7 +15,7 @@ export default function Home() {
     <About />
     <FeaturedHighlights />
     <Courses />
-    <Testimonials />
+    {/* <Testimonials /> */}
     {/* <ModeToggle /> */}
   </main>
   );

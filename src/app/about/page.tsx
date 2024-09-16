@@ -24,11 +24,11 @@ const About = () => {
         <div className='pb-[2rem] col-start-1 col-span-12 md:col-start-3 md:col-span-8 row-start-2 pt-[2rem]'>
           <h4 className='font-bold text-balance'>About Us</h4>
           <br />
-          <p className='text-balance'>Welcome to Essex Bricklaying & Plastering School! We&apos;re here to help you get hands-on experience in bricklaying and plastering. Whether you&apos;re starting a career or just learning for your DIY projects, our practical training suits all skill levels.</p>
+          <p className='text-balance'>Welcome to Bricklaying and Plastering Courses - Essex! We&apos;re here to help you get hands-on experience in bricklaying and plastering. Whether you&apos;re starting a career or just learning for your DIY projects, our practical training suits all skill levels.</p>
           <br />
           <h5 className='font-bold'>Our Story</h5>
           <br />
-          <p className='text-balance'>Essex Bricklaying & Plastering School was founded with a clear mission: to provide high-quality training for those interested in bricklaying and plastering. With over 25 years in the construction industry, our founder, Paul Bailey, saw a need for better training in these essential trades. His passion for teaching and building led to the creation of our school, where we bridge the gap between theory and practice with hands-on learning.</p>
+          <p className='text-balance'>Bricklaying and Plastering Courses - Essex was founded with a clear mission: to provide high-quality training for those interested in bricklaying and plastering. With over 30 years in the construction industry, our founder, Paul Bailey, saw a need for better training in these essential trades. This has led to the creation of our school, where we bridge the gap between theory and practice with hands-on learning.</p>
           <br />
           <h5 className='font-bold'>Our Mission</h5>
           <br />
@@ -40,12 +40,12 @@ const About = () => {
           </ul>
           <h5 className='font-bold'>What We Offer</h5>
           <br />
-          <p className='text-balance'>Our courses cater to everyone, from beginners to those looking to enhance their skills. Here&apos;s what we provide:</p>
+          <p className='text-balance'>Our 5-day courses cater to everyone, from new beginners, DIY projects, if you want a refresher, looking for a career change to those looking to enhance their skills. Here&apos;s what we provide:</p>
           <ul><br />
-            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Beginner Courses:</span> Ideal for newcomers, these courses cover the basics of bricklaying and plastering.</p></li><br />
-            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Advanced Techniques:</span> For those looking to refine their skills, we offer courses in areas like decorative brickwork and rendering.</p></li><br />
-            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Certifications and Apprenticeships:</span> Get certified and gain real-world experience with our accredited programs.</p></li><br />
-            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Customized Training:</span> We also offer tailored training for companies and individuals to meet specific needs.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Beginner Courses:</span> Ideal for newcomers, these courses cover the basics of bricklaying and plastering and cover broad learning spectrum.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Advanced Techniques:</span>  For those looking to refine their skills, we offer courses in areas like decorative brickwork and rendering.</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Internal Certification </span> awarded by “BRICKLAYING AND PLASTERING COURSES - ESSEX”</p></li><br />
+            <li className='flex items-center'><Check className='flex-[1]' size="20px" color='rgb(252,186,3)' /><p className='flex-[11]'><span className='font-semibold'>Customised Training:</span> We also offer tailored training for companies and individuals to meet specific needs.</p></li><br />
           </ul>
           <h5 className='font-bold'>Our Facilities</h5>
           <br />
@@ -72,9 +72,9 @@ const About = () => {
 
           <h5 className='font-bold'>Join Us Today!</h5>
           <br />
-          <p className='text-balance'>If you are looking to start or advance your skills, Essex Bricklaying & Plastering School is here to help you build a strong foundation for your future. Our hands-on approach ensures you are well-prepared for a successful career in the construction industry.</p>
+          <p className='text-balance'>If you are looking to start or advance your skills, Bricklaying and Plastering Courses - Essex is here to help you build a strong foundation for your future. Our hands-on approach ensures you are well-prepared for a successful career in the construction industry.</p>
           <br />
-          <p className='text-balance'>Explore our courses, meet our team, and see why Essex Bricklaying & Plastering School is a great choice for learning the trade. We look forward to helping you get started!</p>
+          <p className='text-balance'>Explore our courses, meet our team, and see why Bricklaying and Plastering Courses - Essex is a great choice for learning the trade. We look forward to helping you get started!</p>
           <br />
           <h5 className='font-bold'>Contact Us</h5>
           <br />

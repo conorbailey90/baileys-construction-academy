@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
            
             <div className='col-start-1 col-span-12 md:col-span-8 md:col-start-1 pt-[1rem] lg:col-span-6 lg:col-start-1'>
-                <p className='font-semibold'>Learn from industry experts and gain the practical skills you need to excel in construction. Our comprehensive courses in bricklaying and plastering are designed to help you build a solid foundation for a successful career. <br /><br/> Whether you&#39;re starting out or looking to enhance your skills, our academy in Essex offers the perfect environment for learning and growth.</p>
+                <p className='font-semibold'>Learn from industry experts and gain the practical skills you need to excel in construction. Our comprehensive 5-day courses in bricklaying and plastering are designed to help you build a solid foundation for a successful career. <br /><br/> Whether you&#39;re starting out or looking to enhance your skills, our courses in Essex offers the perfect environment for learning and growth.</p>
             </div>
 
             <div className='col-start-1 col-span-12 md:col-span-6 md:col-start-1 flex gap-[10px] pt-[1rem]'>

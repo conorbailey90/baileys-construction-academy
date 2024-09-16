@@ -11,7 +11,7 @@ export const CoursesTile = ({idx, title, description, details, image, href}: {id
             transition={{ ease: "easeIn", duration: .5 , delay: .3 * idx }} 
             viewport={{once: true}}
             whileInView={{ opacity: 1, y: 0 }} 
-            className='relative col-span-12 p-[2rem] bg-[black] flex flex-col md:col-span-6 border border-[black] border-[1px]'
+            className='relative col-span-12 p-[2rem] bg-[black] flex flex-col md:col-span-6 border border-[black]'
         >
             {image && <Image alt='image' style={{objectFit: 'cover', opacity: .3}} src={image} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />}
             <div className='relative mb-[1rem] z-1'>
