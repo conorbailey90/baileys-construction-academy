@@ -53,3 +53,16 @@ export async function book(
   let newBooking = await sql`INSERT INTO bookings (customer_id, course_id, date) VALUES (${customerId}, ${courseId}, ${formattedDate})`;
   return { success: true };
 }
+
+export const deleteUserBooking = async (bookingId: string | undefined) => {
+    
+  try{
+      const {rows} = await sql`DELETE FROM bookings WHERE id = ${bookingId};`;
+      console.log('Done')
+      return rows;
+  }catch(err){
+      console.log(err)
+
+      return null
+  }
+}

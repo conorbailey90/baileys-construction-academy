@@ -1,5 +1,6 @@
 import { sql } from "@vercel/postgres"
 
+
 export const getTotalBookingsPerWeek = async () => {
     
     try{
@@ -11,18 +12,20 @@ export const getTotalBookingsPerWeek = async () => {
 }
 
 
-export const getUserBookings = async (useriD: string | undefined) => {
+export const getUserBookings = async (userId: string | undefined) => {
     
     try{
-        const {rows} = await sql`SELECT a.name, a.email, c.name as course, b.date as course_date
+        const {rows} = await sql`SELECT b.id, a.name, a.email, c.name as course, b.date as course_date
                                     FROM users a
                                     INNER JOIN bookings b
                                     ON a.id = b.customer_id
                                     INNER JOIN courses c
                                     ON c.id = b.course_id
-                                    WHERE a.id = ${useriD}`;
+                                    WHERE a.id = ${userId}
+                                    ORDER BY b.date ASC`;
         return rows;
     }catch{
         return null
     }
 }
+

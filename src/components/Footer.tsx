@@ -26,10 +26,9 @@ const Footer = () => {
                 <h6 className='font-semibold'>Courses</h6>
                 <br />
                 <ul>
-                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/bricklaying'}>Profesional Bricklaying</Link></li>
-                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/plastering'}>Profesional Plastering</Link></li>
-                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/bricklaying'}>DIY Bricklaying</Link></li>
-                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/plastering'}>DIY Plastering</Link></li>
+                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/bricklaying'}>Bricklaying</Link></li>
+                    <li><Link className='hover:text-[rgb(252,186,3)]' href={'/plastering'}>Plastering</Link></li>
+
                 </ul>
             </div>
 

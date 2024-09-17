@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Calendar } from '@/components/ui/calendar'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { toast } from "sonner"
@@ -55,7 +55,7 @@ export default function BookingCalendar({
     }
   
     const clickedDate = dates[dates.length - 1] // Get the most recently clicked date
-    console.log(clickedDate);
+    // console.log(clickedDate);
     if (isWeekend(clickedDate)) {
       toast.error('Please select a weekday!', toastOptions)
       return
@@ -115,6 +115,7 @@ export default function BookingCalendar({
           return
         }
         if (courses.some((c: any) => c.id === course) && selectedDates) {
+          console.log(selectedDates[0])
           if(confirm(`You have selected the 5 day ${courses.find(c => c.id == course)?.name} course starting on ${selectedDates[0].toLocaleDateString()}. Click OK to confirm your booking.`)){
             const response = await book(
               user.id, 
@@ -135,7 +136,9 @@ export default function BookingCalendar({
             return
             }
             toast.success('Booking successful!', toastOptions)
-            router.push('/profile');
+            // router.push('/profile');
+            window.location.href = '/profile';
+
           }
         
         } else {
@@ -156,18 +159,22 @@ export default function BookingCalendar({
     )
   }
 
+  useEffect(() => {
+    toast.message('Now taking bookings from February 2025!', toastOptions)
+  },[])
+
   return (
-      <div className='w-[100%] pt-[120px] flex flex-col md:flex-row'>
+      <div className='w-[100%] pt-[90px] flex flex-col md:flex-row md:pt-[150px]'>
        
         <div className='flex flex-col items-center flex-1 w-[100%]'>
-        <h4 className='text-[rgb(252,186,3)] w-[100%] font-bold'>Now taking bookings from February 2025</h4>
+
           <div className='w-[100%]'>
-            <h3 className="font-semibold mb-[1rem]">Select Course</h3>
+            <h4 className="font-semibold mb-[1rem]">Select Course</h4>
           </div>
           
           <Select onValueChange={handleCourseChange}>
-            <SelectTrigger className="w-[100%] ">
-              <SelectValue className='font-semibold' placeholder="Select course" />
+            <SelectTrigger className="w-[100%] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)] ">
+              <SelectValue placeholder="Select course" />
             </SelectTrigger>
             <SelectContent>
               {courses.map((course: any) => (
@@ -177,19 +184,21 @@ export default function BookingCalendar({
           </Select>
 
           <div className='w-[100%]'>
-            <h5 className="font-semibold mt-[2rem] mb-[1rem]">
+            <h4 className="font-semibold my-[1rem]">
               Select Week
-            </h5>
+            </h4>
 
             <form onSubmit={handleSubmit} className="space-y-4 flex flex-col items-center">
               <Calendar
-                className="rounded-md border w-[100%] flex justify-center"
+                className="w-[100%] flex justify-center rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]"
                 mode="multiple"
                 selected={selectedDates}
                 numberOfMonths={2}
                 onSelect={handleDateSelect}
-                fromDate={new Date(2025, 1, 1)}
-                toDate={new Date(new Date().setFullYear(new Date().getFullYear() + 1))}
+                fromDate={new Date(Date.UTC(2025, 1, 1))}
+                toDate={new Date(Date.UTC(new Date().getFullYear() + 1, 11, 31))}
+                // fromDate={new Date(2025, 1, 1)}
+                // toDate={new Date(new Date().setFullYear(new Date().getFullYear() + 1))}
                 modifiers={{ booked: isDateBooked }}
                 modifiersStyles={{
                   booked: { color: "white", backgroundColor: "red", cursor: "not-allowed", opacity: 0.5, userSelect: 'none'  },
@@ -207,15 +216,15 @@ export default function BookingCalendar({
               />
               {user && 
               <div className="space-y-4">
-                <input ref={firstname} required type="text" name="firstname" id="" placeholder='First Name' className='w-[100%] p-[.5rem]' defaultValue={user.firstName || ''} />
-                <input ref={lastname}  required type="text" name="lastname" id="" placeholder='Last Name' className='w-[100%] p-[.5rem]' defaultValue={user.lastName || ''} />
-                <input ref={address1} required type="text" name='address1' placeholder='Address Line 1' className='w-[100%] p-[.5rem]' defaultValue={user.address1 || ''}/>
-                <input ref={address2}  required type="text" name='address2' placeholder='Address Line 2' className='w-[100%] p-[.5rem]' defaultValue={user.address2 || ''}/>
-                <input ref={city}  required type="text" name='city' placeholder='City' className='w-[100%] p-[.5rem]' defaultValue={user.city || ''}/>
-                <input ref={county}  required type="text" name='county' placeholder='County' className='w-[100%] p-[.5rem]' defaultValue={user.county || ''}/>
-                <input ref={country}  required type="text" name='country' placeholder='Country' className='w-[100%] p-[.5rem]' defaultValue={user.country || 'United Kingdom'} />
-                <input ref={postcode}  required type="text" name='postcode' placeholder='Post Code' className='w-[100%] p-[.5rem]' defaultValue={user.postcode || ''} />
-                <input ref={phone}  required type="text" name='phone' placeholder='Phone Number' className='w-[100%] p-[.5rem]' defaultValue={user.phone || ''} />
+                <input ref={firstname} required type="text" name="firstname" id="" placeholder='First Name' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.firstName || ''} />
+                <input ref={lastname}  required type="text" name="lastname" id="" placeholder='Last Name' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.lastName || ''} />
+                <input ref={address1} required type="text" name='address1' placeholder='Address Line 1' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.address1 || ''}/>
+                <input ref={address2}  required type="text" name='address2' placeholder='Address Line 2' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.address2 || ''}/>
+                <input ref={city}  required type="text" name='city' placeholder='City' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.city || ''}/>
+                <input ref={county}  required type="text" name='county' placeholder='County' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.county || ''}/>
+                <input ref={country}  required type="text" name='country' placeholder='Country' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.country || 'United Kingdom'} />
+                <input ref={postcode}  required type="text" name='postcode' placeholder='Post Code' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.postcode || ''} />
+                <input ref={phone}  required type="text" name='phone' placeholder='Phone Number' className='w-[100%] p-[.5rem] rounded-[5px] bg-[black] border-[1px] border-[rgb(252,186,3)]' defaultValue={user.phone || ''} />
       
               </div>
               }
@@ -225,18 +234,18 @@ export default function BookingCalendar({
           </div>
         </div>
       
-        <div className='flex flex-col flex-1 w-[100%] p-[2rem]'>
+        <div className='flex flex-col flex-1 w-[100%] py-[2rem] md:px-[2rem] md:py-[0]'>
           <div className='w-[100%]'>
-            <h5 className="font-semibold mt-[2rem] mb-[1rem]">
+            <h5 className="font-semibold mt-[2rem] mb-[1rem] md:mt-[0]">
               Course Selected: <span className='text-[rgb(252,186,3)] '>{courses.find(c => c.id == course)?.name || 'None'}</span> 
             </h5>
           </div>
           
           <div className='w-[100%] mb-[2rem] '>
-            <h5 className="font-semibold">Selected Weekdays (Monday to Friday):</h5>
-            <ul className="list-disc pl-5 mt-[1rem]">
+            <h6 className="font-semibold">Selected Weekdays (Monday to Friday):</h6>
+            <ul className="list-disc mt-[1rem]">
             {selectedDates?.map((date, index) => (
-              <li key={index}>{date.toDateString()}</li>
+              <li className='font-semibold list-none border-b border-white/20 py-[.5rem]' key={index}>{date.toDateString()}</li>
             ))}
             </ul>
           </div>

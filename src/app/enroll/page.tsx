@@ -10,7 +10,7 @@ const BookingPage = async () => {
     const bookingTotals = await getTotalBookingsPerWeek()
 
     return (
-        <section className="w-[100%] flex justify-center">
+        <section className="w-[100%] flex justify-center bg-[#161616] pb-[30px]">
             <div className="w-[95%]">
                 <BookingCalendar user={session?.user} courses={rows} bookingTotals={bookingTotals} />
             </div>

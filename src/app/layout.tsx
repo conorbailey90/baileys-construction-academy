@@ -13,7 +13,7 @@ import { ThemeProvider } from "@/components/ThemeProvider"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Essex Bricklaying & Plastering School",
+  title: "Bricklaying and Plastering Courses - Essex",
   description: "Build Your Future with Expert Training in Bricklaying & Plastering"
 };
 
