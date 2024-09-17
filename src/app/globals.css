@@ -14,7 +14,7 @@
 
 *{
   color: white;
-  font-family: 'montserrat';
+  font-family: 'montserrat', sans-serif;
   letter-spacing: -.03em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
