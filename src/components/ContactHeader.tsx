@@ -7,7 +7,7 @@ const ContactHeader = () => {
         <div className='relative w-[95%] max-w-[1880px] flex '>
           <div className=' flex items-center h-[100%] mr-[2rem]'>
             <PhoneIcon color='black' strokeWidth={'1px'} className='mr-[.5rem]' />
-            <p className='text-[#161616] font-semibold text-xs'> 01277 532991</p>
+            <p className='text-[#161616] font-semibold text-xs'>01268 204334</p>
           </div>
           <div className=' flex items-center h-[100%] mr-[2rem] '>
             <MailIcon strokeWidth={'1px'}color='black' className='mr-[.5rem]' />

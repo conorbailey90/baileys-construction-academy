@@ -115,7 +115,7 @@ export default function BookingCalendar({
           return
         }
         if (courses.some((c: any) => c.id === course) && selectedDates) {
-          console.log(selectedDates[0])
+          // console.log(selectedDates[0])
           if(confirm(`You have selected the 5 day ${courses.find(c => c.id == course)?.name} course starting on ${selectedDates[0].toLocaleDateString()}. Click OK to confirm your booking.`)){
             const response = await book(
               user.id, 
@@ -132,8 +132,8 @@ export default function BookingCalendar({
               phone.current!.value
             )
             if(response.error){
-            toast.error(response.message, toastOptions);
-            return
+              toast.error(response.message, toastOptions);
+              return
             }
             toast.success('Booking successful!', toastOptions)
             // router.push('/profile');

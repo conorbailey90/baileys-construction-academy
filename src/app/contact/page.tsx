@@ -39,7 +39,7 @@ const page = () => {
                 <PhoneIcon size={'50px'}/>
               </div>
               <div className='flex-[10] flex items-center'>
-                <p className='font-semibold text-lg'>01277 532991</p>
+                <p className='font-semibold text-lg'>01268 204334</p>
               </div>
              
             </li>
