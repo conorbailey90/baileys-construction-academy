@@ -16,9 +16,9 @@ import { EmailTemplate } from '@/components/email-template';
     try {
         const resend = new Resend(process.env.RESEND_API_KEY);
         const {data, error} = await resend.emails.send({
-            from: 'Baileys <onboarding@resend.dev>',
-            to: ['conbailey90@gmail.com'],
-            subject: 'New Query',
+            from: 'Bricklaying & Plastering Courses Essex <onboarding@resend.dev>',
+            to: ['conbailey90@gmail.com', 'bvadherconsultancy@gmail.com', 'bhavin@paulbailey.info', 'info@paulbailey.info'],
+            subject: 'Bricklaying and Plastering Courses Essex - New Query',
             react: EmailTemplate({ name, email, phone, message }), // Ensure this returns a valid React element
         });
      
